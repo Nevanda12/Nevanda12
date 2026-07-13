@@ -1,0 +1,3138 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 1180 610"
+     width="1180" height="610"
+     font-family="Inter, -apple-system, system-ui, sans-serif">
+  <title>Nevanda D.Evrilian — GitHub Profile Hero</title>
+  <desc>Premium animated GitHub profile hero banner with binary-art face portrait and typing terminal.</desc>
+<defs>
+
+  <radialGradient id="bgGlow1" cx="15%" cy="20%" r="55%">
+    <stop offset="0%" stop-color="#BFDBFE" stop-opacity="0.7"/>
+    <stop offset="60%" stop-color="#BFDBFE" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="bgGlow2" cx="85%" cy="80%" r="55%">
+    <stop offset="0%" stop-color="#C7D2FE" stop-opacity="0.7"/>
+    <stop offset="60%" stop-color="#C7D2FE" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="bgGlow3" cx="50%" cy="50%" r="45%">
+    <stop offset="0%" stop-color="#A7F3D0" stop-opacity="0.48999999999999994"/>
+    <stop offset="60%" stop-color="#A7F3D0" stop-opacity="0"/>
+  </radialGradient>
+
+  <linearGradient id="asciiGrad" x1="0" y1="0" x2="400" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#2563EB"/>
+    <stop offset="50%" stop-color="#0891B2"/>
+    <stop offset="100%" stop-color="#2563EB"/>
+    <animate attributeName="x1" values="-200;200;-200" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="200;600;200" dur="6s" repeatCount="indefinite"/>
+  </linearGradient>
+
+  <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#2563EB"/>
+    <stop offset="50%" stop-color="#0891B2"/>
+    <stop offset="100%" stop-color="#059669"/>
+  </linearGradient>
+
+  <linearGradient id="borderShimmer" x1="0" y1="0" x2="1180" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#2563EB" stop-opacity="0"/>
+    <stop offset="40%" stop-color="#2563EB" stop-opacity="0.55"/>
+    <stop offset="50%" stop-color="#0891B2" stop-opacity="0.75"/>
+    <stop offset="60%" stop-color="#059669" stop-opacity="0.55"/>
+    <stop offset="100%" stop-color="#059669" stop-opacity="0"/>
+    <animate attributeName="x1" values="-1180;1180" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="0;2360" dur="5s" repeatCount="indefinite"/>
+  </linearGradient>
+
+  <linearGradient id="glassSheen" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="rgba(255,255,255,0.95)" stop-opacity="0.7"/>
+    <stop offset="35%" stop-color="rgba(255,255,255,0.95)" stop-opacity="0"/>
+    <stop offset="65%" stop-color="rgba(255,255,255,0.95)" stop-opacity="0"/>
+    <stop offset="100%" stop-color="rgba(255,255,255,0.95)" stop-opacity="0.4"/>
+  </linearGradient>
+
+  <linearGradient id="panelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#F8FAFC" stop-opacity="0.96"/>
+    <stop offset="100%" stop-color="#F1F5F9" stop-opacity="0.96"/>
+  </linearGradient>
+
+  <linearGradient id="termHeaderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#F1F5F9"/>
+    <stop offset="100%" stop-color="#F1F5F9"/>
+  </linearGradient>
+
+  <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <filter id="strongGlow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="6" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <filter id="noiseFilter" x="0%" y="0%" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="7" result="noise"/>
+    <feColorMatrix in="noise" type="matrix" values="
+      0 0 0 0 1
+      0 0 0 0 1
+      0 0 0 0 1
+      0 0 0 0.03 0"/>
+  </filter>
+
+  <filter id="innerShadow" x="-10%" y="-10%" width="120%" height="120%">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+    <feOffset dx="0" dy="2"/>
+    <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowDiff"/>
+    <feFlood flood-color="rgba(15,23,42,0.18)" flood-opacity="0.5"/>
+    <feComposite in2="shadowDiff" operator="in"/>
+    <feComposite in2="SourceGraphic" operator="over"/>
+  </filter>
+
+  <filter id="canvasShadow" x="-5%" y="-5%" width="110%" height="115%">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+    <feOffset dx="0" dy="6"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.35 0"/>
+    <feMerge>
+      <feMergeNode/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <clipPath id="typeClip0">
+    <rect x="540" y="164" width="0" height="32">
+      <animate attributeName="width"
+        values="0;0;253;253;253;0"
+        keyTimes="0.00000;0.00007;0.08000;0.17333;0.20000;1.00000"
+        dur="15.0s" repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+
+  <clipPath id="typeClip1">
+    <rect x="540" y="164" width="0" height="32">
+      <animate attributeName="width"
+        values="0;0;296;296;296;0"
+        keyTimes="0.00000;0.20000;0.28000;0.37333;0.40000;1.00000"
+        dur="15.0s" repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+
+  <clipPath id="typeClip2">
+    <rect x="540" y="164" width="0" height="32">
+      <animate attributeName="width"
+        values="0;0;340;340;340;0"
+        keyTimes="0.00000;0.40000;0.48000;0.57333;0.60000;1.00000"
+        dur="15.0s" repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+
+  <clipPath id="typeClip3">
+    <rect x="540" y="164" width="0" height="32">
+      <animate attributeName="width"
+        values="0;0;166;166;166;0"
+        keyTimes="0.00000;0.60000;0.68000;0.77333;0.80000;1.00000"
+        dur="15.0s" repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+
+  <clipPath id="typeClip4">
+    <rect x="540" y="164" width="0" height="32">
+      <animate attributeName="width"
+        values="0;0;195;195;195;0"
+        keyTimes="0.00000;0.80000;0.88000;0.97333;1.00000;1.00000"
+        dur="15.0s" repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+
+  <clipPath id="leftPanelClip">
+    <rect x="20" y="20" width="430" height="570" rx="18" ry="18"/>
+  </clipPath>
+
+  <clipPath id="rightPanelClip">
+    <rect x="470" y="20" width="690" height="570" rx="18" ry="18"/>
+  </clipPath>
+
+  <mask id="borderMask">
+    <rect x="0" y="0" width="1180" height="610" fill="black"/>
+    <rect x="0.5" y="0.5" width="1179" height="609" rx="19.5" ry="19.5"
+          fill="none" stroke="white" stroke-width="2"/>
+  </mask>
+
+  <symbol id="ico-github" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 4.6 18 4.9 18 4.9c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/>
+  </symbol>
+  <symbol id="ico-linkedin" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/>
+  </symbol>
+  <symbol id="ico-twitter" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+  </symbol>
+  <symbol id="ico-portfolio" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+  </symbol>
+</defs>
+
+  <clipPath id="canvasClip">
+    <rect x="0" y="0" width="1180" height="610" rx="20" ry="20"/>
+  </clipPath>
+<g clip-path="url(#canvasClip)">
+<rect x="0" y="0" width="1180" height="610" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1180" height="610" fill="url(#bgGlow1)"/>
+<rect x="0" y="0" width="1180" height="610" fill="url(#bgGlow2)"/>
+<rect x="0" y="0" width="1180" height="610" fill="url(#bgGlow3)"/>
+
+    <circle cx="180" cy="140" r="72" fill="#BFDBFE" opacity="0.45" filter="url(#strongGlow)">
+      <animate attributeName="cy" values="140;126;154;140" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="180;194;166;180" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.45;0.27;0.45" dur="6s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="950" cy="470" r="88" fill="#C7D2FE" opacity="0.45" filter="url(#strongGlow)">
+      <animate attributeName="cy" values="470;452;488;470" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="950;968;932;950" dur="12s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.45;0.27;0.45" dur="7s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="600" cy="300" r="64" fill="#A7F3D0" opacity="0.45" filter="url(#strongGlow)">
+      <animate attributeName="cy" values="300;280;320;300" dur="12s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="600;620;580;600" dur="14s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.45;0.27;0.45" dur="8s" repeatCount="indefinite"/>
+    </circle>
+<rect x="0" y="0" width="1180" height="610" filter="url(#noiseFilter)" opacity="0.9"/>
+
+    <g clip-path="url(#canvasClip)">
+      <rect x="0" y="0" width="1180" height="3" fill="#0891B2" opacity="0.14">
+        <animate attributeName="y" values="0;610;0" dur="9s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.14;0" dur="9s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+      <circle cx="248" cy="45" r="1.2" fill="#0891B2" opacity="0.34">
+        <animate attributeName="cy" values="45;30;45" dur="6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.34;0.10;0.34" dur="6s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle cx="884" cy="52" r="0.8" fill="#2563EB" opacity="0.28">
+        <animate attributeName="cy" values="52;42;52" dur="6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.28;0.08;0.28" dur="6s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle cx="1136" cy="449" r="1.0" fill="#0891B2" opacity="0.41">
+        <animate attributeName="cy" values="449;439;449" dur="7s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.41;0.12;0.41" dur="7s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle cx="885" cy="368" r="1.2" fill="#2563EB" opacity="0.3">
+        <animate attributeName="cy" values="368;353;368" dur="7s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.3;0.09;0.3" dur="7s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle cx="798" cy="119" r="1.2" fill="#0891B2" opacity="0.55">
+        <animate attributeName="cy" values="119;104;119" dur="9s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.55;0.17;0.55" dur="9s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle cx="960" cy="569" r="0.8" fill="#2563EB" opacity="0.59">
+        <animate attributeName="cy" values="569;579;569" dur="8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.59;0.18;0.59" dur="8s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle cx="760" cy="216" r="0.8" fill="#0891B2" opacity="0.27">
+        <animate attributeName="cy" values="216;201;216" dur="6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.27;0.08;0.27" dur="6s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle cx="496" cy="123" r="1.5" fill="#2563EB" opacity="0.35">
+        <animate attributeName="cy" values="123;113;123" dur="10s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.35;0.10;0.35" dur="10s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle cx="778" cy="383" r="1.0" fill="#0891B2" opacity="0.48">
+        <animate attributeName="cy" values="383;373;383" dur="10s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.48;0.14;0.48" dur="10s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle cx="1113" cy="270" r="1.0" fill="#2563EB" opacity="0.41">
+        <animate attributeName="cy" values="270;280;270" dur="7s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.41;0.12;0.41" dur="7s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle cx="134" cy="254" r="0.8" fill="#0891B2" opacity="0.53">
+        <animate attributeName="cy" values="254;239;254" dur="8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.53;0.16;0.53" dur="8s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle cx="452" cy="342" r="1.0" fill="#2563EB" opacity="0.48">
+        <animate attributeName="cy" values="342;332;342" dur="8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.48;0.14;0.48" dur="8s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle cx="562" cy="162" r="1.0" fill="#0891B2" opacity="0.51">
+        <animate attributeName="cy" values="162;177;162" dur="9s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.51;0.15;0.51" dur="9s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle cx="837" cy="390" r="1.0" fill="#2563EB" opacity="0.6">
+        <animate attributeName="cy" values="390;375;390" dur="6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.6;0.18;0.6" dur="6s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle cx="116" cy="132" r="1.0" fill="#0891B2" opacity="0.47">
+        <animate attributeName="cy" values="132;117;132" dur="10s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.47;0.14;0.47" dur="10s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle cx="808" cy="410" r="1.8" fill="#2563EB" opacity="0.6">
+        <animate attributeName="cy" values="410;395;410" dur="9s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.6;0.18;0.6" dur="9s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle cx="254" cy="569" r="1.2" fill="#0891B2" opacity="0.52">
+        <animate attributeName="cy" values="569;579;569" dur="7s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.52;0.16;0.52" dur="7s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle cx="910" cy="181" r="1.5" fill="#2563EB" opacity="0.25">
+        <animate attributeName="cy" values="181;171;181" dur="10s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.25;0.07;0.25" dur="10s" repeatCount="indefinite"/>
+      </circle>
+</g>
+
+  <g id="leftPanel">
+    <rect x="20" y="24" width="430" height="570" rx="18" ry="18"
+          fill="rgba(15,23,42,0.18)" opacity="0.55" filter="url(#softGlow)"/>
+    <rect x="20" y="20" width="430" height="570" rx="18" ry="18"
+          fill="url(#panelGrad)" stroke="rgba(15,23,42,0.12)" stroke-width="1"/>
+    <rect x="20" y="20" width="430" height="570" rx="18" ry="18"
+          fill="url(#glassSheen)" opacity="0.5"/>
+    <g transform="translate(44, 50)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#334155" letter-spacing="2">
+      <circle cx="0" cy="-3" r="3" fill="#0891B2">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1.6s" repeatCount="indefinite"/>
+      </circle>
+      <text x="10" y="0">// portrait.dat</text>
+    </g>
+    <line x1="44" y1="64" x2="426" y2="64"
+          stroke="rgba(15,23,42,0.12)" stroke-width="1"/>
+  </g>
+
+  <ellipse cx="235.0" cy="313.0" rx="190" ry="160"
+           fill="#2563EB" opacity="0.12" filter="url(#strongGlow)">
+    <animate attributeName="opacity" values="0.08;0.18;0.08" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="rx" values="185;200;185" dur="4s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="235.0" cy="313.0" rx="130" ry="110"
+           fill="#0891B2" opacity="0.10" filter="url(#strongGlow)">
+    <animate attributeName="opacity" values="0.06;0.14;0.06" dur="5s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <g id="binaryPortrait" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+     font-size="6.0" font-weight="bold">
+    <animateTransform attributeName="transform" type="translate"
+      values="0,0; 0,-3; 0,0; 0,2; 0,0" dur="6s" repeatCount="indefinite"/>
+    <text x="231.40" y="165.00" fill="#0A0A08">1</text>
+    <text x="235.00" y="165.00" fill="#353531">1</text>
+    <text x="238.60" y="165.00" fill="#333430">0</text>
+    <text x="242.20" y="165.00" fill="#2C2D2B">0</text>
+    <text x="245.80" y="165.00" fill="#292A2A">1</text>
+    <text x="249.40" y="165.00" fill="#353535">0</text>
+    <text x="253.00" y="165.00" fill="#333635">0</text>
+    <text x="256.60" y="165.00" fill="#343636">1</text>
+    <text x="260.20" y="165.00" fill="#1F2122">1</text>
+    <text x="263.80" y="165.00" fill="#161816">0</text>
+    <text x="267.40" y="165.00" fill="#272825">1</text>
+    <text x="271.00" y="165.00" fill="#1A1B18">0</text>
+    <text x="274.60" y="165.00" fill="#0B0B09">1</text>
+    <text x="278.20" y="165.00" fill="#0A0A09">1</text>
+    <text x="227.80" y="172.00" fill="#151516">1</text>
+    <text x="231.40" y="172.00" fill="#3A3C39">1</text>
+    <text x="235.00" y="172.00" fill="#393D3B">0</text>
+    <text x="238.60" y="172.00" fill="#26292B">1</text>
+    <text x="242.20" y="172.00" fill="#222427">0</text>
+    <text x="245.80" y="172.00" fill="#313338">1</text>
+    <text x="249.40" y="172.00" fill="#3D4346">0</text>
+    <text x="253.00" y="172.00" fill="#41484C">0</text>
+    <text x="256.60" y="172.00" fill="#33383E">1</text>
+    <text x="260.20" y="172.00" fill="#25282E">0</text>
+    <text x="263.80" y="172.00" fill="#1C2227">1</text>
+    <text x="267.40" y="172.00" fill="#272D2E">0</text>
+    <text x="271.00" y="172.00" fill="#2E3233">1</text>
+    <text x="274.60" y="172.00" fill="#252727">1</text>
+    <text x="278.20" y="172.00" fill="#272926">0</text>
+    <text x="281.80" y="172.00" fill="#20211F">1</text>
+    <text x="220.60" y="179.00" fill="#060607">0</text>
+    <text x="224.20" y="179.00" fill="#262727">0</text>
+    <text x="227.80" y="179.00" fill="#48494B">0</text>
+    <text x="231.40" y="179.00" fill="#3F4348">1</text>
+    <text x="235.00" y="179.00" fill="#171D27">0</text>
+    <text x="238.60" y="179.00" fill="#060B16">1</text>
+    <text x="242.20" y="179.00" fill="#0E141E">0</text>
+    <text x="245.80" y="179.00" fill="#2B323B">0</text>
+    <text x="249.40" y="179.00" fill="#293038">0</text>
+    <text x="253.00" y="179.00" fill="#222932">0</text>
+    <text x="256.60" y="179.00" fill="#1F252E">0</text>
+    <text x="260.20" y="179.00" fill="#1C202A">1</text>
+    <text x="263.80" y="179.00" fill="#141721">0</text>
+    <text x="267.40" y="179.00" fill="#0C1019">0</text>
+    <text x="271.00" y="179.00" fill="#10151C">1</text>
+    <text x="274.60" y="179.00" fill="#1A1E25">1</text>
+    <text x="278.20" y="179.00" fill="#212327">1</text>
+    <text x="281.80" y="179.00" fill="#1C1E21">0</text>
+    <text x="285.40" y="179.00" fill="#16191D">1</text>
+    <text x="289.00" y="179.00" fill="#0E0F10">0</text>
+    <text x="220.60" y="186.00" fill="#1C1E1F">1</text>
+    <text x="224.20" y="186.00" fill="#292D2F">0</text>
+    <text x="227.80" y="186.00" fill="#383B40">0</text>
+    <text x="231.40" y="186.00" fill="#2F3139">1</text>
+    <text x="235.00" y="186.00" fill="#1A1D28">1</text>
+    <text x="238.60" y="186.00" fill="#131721">1</text>
+    <text x="242.20" y="186.00" fill="#191D24">0</text>
+    <text x="245.80" y="186.00" fill="#1C1F25">1</text>
+    <text x="249.40" y="186.00" fill="#1C1F24">1</text>
+    <text x="253.00" y="186.00" fill="#1A1C22">0</text>
+    <text x="256.60" y="186.00" fill="#191B20">0</text>
+    <text x="260.20" y="186.00" fill="#17171E">1</text>
+    <text x="263.80" y="186.00" fill="#14141C">1</text>
+    <text x="267.40" y="186.00" fill="#101118">1</text>
+    <text x="271.00" y="186.00" fill="#0F1018">1</text>
+    <text x="274.60" y="186.00" fill="#0B0F17">0</text>
+    <text x="278.20" y="186.00" fill="#090D16">0</text>
+    <text x="281.80" y="186.00" fill="#0E111A">0</text>
+    <text x="285.40" y="186.00" fill="#0E111B">0</text>
+    <text x="289.00" y="186.00" fill="#0F0F11">0</text>
+    <text x="217.00" y="193.00" fill="#0B0B0B">0</text>
+    <text x="220.60" y="193.00" fill="#1D1F21">0</text>
+    <text x="224.20" y="193.00" fill="#23272C">0</text>
+    <text x="227.80" y="193.00" fill="#1E222A">0</text>
+    <text x="231.40" y="193.00" fill="#1C1F29">0</text>
+    <text x="235.00" y="193.00" fill="#161822">0</text>
+    <text x="238.60" y="193.00" fill="#272425">0</text>
+    <text x="242.20" y="193.00" fill="#4C443B">1</text>
+    <text x="245.80" y="193.00" fill="#5F554B">0</text>
+    <text x="249.40" y="193.00" fill="#5B5045">1</text>
+    <text x="253.00" y="193.00" fill="#574A40">0</text>
+    <text x="256.60" y="193.00" fill="#54463B">0</text>
+    <text x="260.20" y="193.00" fill="#463A31">1</text>
+    <text x="263.80" y="193.00" fill="#3D332D">1</text>
+    <text x="267.40" y="193.00" fill="#362F27">1</text>
+    <text x="271.00" y="193.00" fill="#312D24">1</text>
+    <text x="274.60" y="193.00" fill="#2E2A22">0</text>
+    <text x="278.20" y="193.00" fill="#24211C">1</text>
+    <text x="281.80" y="193.00" fill="#0D0E12">0</text>
+    <text x="285.40" y="193.00" fill="#0A0C12">1</text>
+    <text x="289.00" y="193.00" fill="#0B0B0B">0</text>
+    <text x="217.00" y="200.00" fill="#0A0A0A">1</text>
+    <text x="220.60" y="200.00" fill="#222527">0</text>
+    <text x="224.20" y="200.00" fill="#22272D">0</text>
+    <text x="227.80" y="200.00" fill="#172027">0</text>
+    <text x="231.40" y="200.00" fill="#0F141C">1</text>
+    <text x="235.00" y="200.00" fill="#212120">1</text>
+    <text x="238.60" y="200.00" fill="#494339">1</text>
+    <text x="242.20" y="200.00" fill="#665A4E">0</text>
+    <text x="245.80" y="200.00" fill="#6A5A4C">1</text>
+    <text x="249.40" y="200.00" fill="#736152">1</text>
+    <text x="253.00" y="200.00" fill="#73604F">0</text>
+    <text x="256.60" y="200.00" fill="#62503E">1</text>
+    <text x="260.20" y="200.00" fill="#483C2D">0</text>
+    <text x="263.80" y="200.00" fill="#3B3328">1</text>
+    <text x="267.40" y="200.00" fill="#3B3228">0</text>
+    <text x="271.00" y="200.00" fill="#44392D">1</text>
+    <text x="274.60" y="200.00" fill="#504333">1</text>
+    <text x="278.20" y="200.00" fill="#554838">0</text>
+    <text x="281.80" y="200.00" fill="#302C23">1</text>
+    <text x="285.40" y="200.00" fill="#161615">1</text>
+    <text x="289.00" y="200.00" fill="#110F0C">1</text>
+    <text x="220.60" y="207.00" fill="#070708">1</text>
+    <text x="224.20" y="207.00" fill="#0C1013">1</text>
+    <text x="227.80" y="207.00" fill="#0B1119">0</text>
+    <text x="231.40" y="207.00" fill="#1D2022">0</text>
+    <text x="235.00" y="207.00" fill="#4F4840">0</text>
+    <text x="238.60" y="207.00" fill="#493F37">0</text>
+    <text x="242.20" y="207.00" fill="#40382F">0</text>
+    <text x="245.80" y="207.00" fill="#382D24">1</text>
+    <text x="249.40" y="207.00" fill="#4D3E33">0</text>
+    <text x="253.00" y="207.00" fill="#816E5E">0</text>
+    <text x="256.60" y="207.00" fill="#786552">1</text>
+    <text x="260.20" y="207.00" fill="#4F3D2D">1</text>
+    <text x="263.80" y="207.00" fill="#564638">0</text>
+    <text x="267.40" y="207.00" fill="#574739">1</text>
+    <text x="271.00" y="207.00" fill="#675344">0</text>
+    <text x="274.60" y="207.00" fill="#6D5846">1</text>
+    <text x="278.20" y="207.00" fill="#65523E">0</text>
+    <text x="281.80" y="207.00" fill="#5A4B39">0</text>
+    <text x="285.40" y="207.00" fill="#4B3E31">0</text>
+    <text x="289.00" y="207.00" fill="#4F3E32">1</text>
+    <text x="292.60" y="207.00" fill="#2C1E1A">1</text>
+    <text x="227.80" y="214.00" fill="#050609">0</text>
+    <text x="231.40" y="214.00" fill="#22211F">0</text>
+    <text x="235.00" y="214.00" fill="#7C6E61">0</text>
+    <text x="238.60" y="214.00" fill="#847468">1</text>
+    <text x="242.20" y="214.00" fill="#74665A">1</text>
+    <text x="245.80" y="214.00" fill="#6B5D50">1</text>
+    <text x="249.40" y="214.00" fill="#7C6C5B">1</text>
+    <text x="253.00" y="214.00" fill="#95816E">1</text>
+    <text x="256.60" y="214.00" fill="#8D7765">0</text>
+    <text x="260.20" y="214.00" fill="#69503D">1</text>
+    <text x="263.80" y="214.00" fill="#6B533E">0</text>
+    <text x="267.40" y="214.00" fill="#806754">1</text>
+    <text x="271.00" y="214.00" fill="#876B59">0</text>
+    <text x="274.60" y="214.00" fill="#785F4C">1</text>
+    <text x="278.20" y="214.00" fill="#68533F">1</text>
+    <text x="281.80" y="214.00" fill="#5E4E3C">0</text>
+    <text x="285.40" y="214.00" fill="#57493B">0</text>
+    <text x="289.00" y="214.00" fill="#504033">0</text>
+    <text x="292.60" y="214.00" fill="#33261E">1</text>
+    <text x="231.40" y="221.00" fill="#413731">1</text>
+    <text x="235.00" y="221.00" fill="#887366">0</text>
+    <text x="238.60" y="221.00" fill="#998270">1</text>
+    <text x="242.20" y="221.00" fill="#99806E">1</text>
+    <text x="245.80" y="221.00" fill="#947C6A">1</text>
+    <text x="249.40" y="221.00" fill="#967F6C">0</text>
+    <text x="253.00" y="221.00" fill="#776253">0</text>
+    <text x="256.60" y="221.00" fill="#604D40">0</text>
+    <text x="260.20" y="221.00" fill="#574336">1</text>
+    <text x="263.80" y="221.00" fill="#5A4437">0</text>
+    <text x="267.40" y="221.00" fill="#664F3F">1</text>
+    <text x="271.00" y="221.00" fill="#6F5845">1</text>
+    <text x="274.60" y="221.00" fill="#6E5844">1</text>
+    <text x="278.20" y="221.00" fill="#65523D">1</text>
+    <text x="281.80" y="221.00" fill="#5D4E3C">1</text>
+    <text x="285.40" y="221.00" fill="#4D4235">1</text>
+    <text x="289.00" y="221.00" fill="#261F19">0</text>
+    <text x="292.60" y="221.00" fill="#0D0907">1</text>
+    <text x="231.40" y="228.00" fill="#26201C">1</text>
+    <text x="235.00" y="228.00" fill="#827064">0</text>
+    <text x="238.60" y="228.00" fill="#826B5B">1</text>
+    <text x="242.20" y="228.00" fill="#846D5B">1</text>
+    <text x="245.80" y="228.00" fill="#8D7663">0</text>
+    <text x="249.40" y="228.00" fill="#83715E">1</text>
+    <text x="253.00" y="228.00" fill="#6A5649">1</text>
+    <text x="256.60" y="228.00" fill="#674E45">1</text>
+    <text x="260.20" y="228.00" fill="#60433E">0</text>
+    <text x="263.80" y="228.00" fill="#563B35">0</text>
+    <text x="267.40" y="228.00" fill="#533B31">0</text>
+    <text x="271.00" y="228.00" fill="#584432">1</text>
+    <text x="274.60" y="228.00" fill="#604E39">1</text>
+    <text x="278.20" y="228.00" fill="#5F4F3D">1</text>
+    <text x="281.80" y="228.00" fill="#5C4C3C">0</text>
+    <text x="285.40" y="228.00" fill="#372E25">0</text>
+    <text x="235.00" y="235.00" fill="#221E1C">1</text>
+    <text x="238.60" y="235.00" fill="#4E443C">1</text>
+    <text x="242.20" y="235.00" fill="#64574B">1</text>
+    <text x="245.80" y="235.00" fill="#776655">0</text>
+    <text x="249.40" y="235.00" fill="#695643">1</text>
+    <text x="253.00" y="235.00" fill="#6F5A49">0</text>
+    <text x="256.60" y="235.00" fill="#78604F">1</text>
+    <text x="260.20" y="235.00" fill="#745D4B">0</text>
+    <text x="263.80" y="235.00" fill="#715A48">1</text>
+    <text x="267.40" y="235.00" fill="#6B5542">1</text>
+    <text x="271.00" y="235.00" fill="#64513C">0</text>
+    <text x="274.60" y="235.00" fill="#5A4938">1</text>
+    <text x="278.20" y="235.00" fill="#4F4033">0</text>
+    <text x="281.80" y="235.00" fill="#504033">0</text>
+    <text x="285.40" y="235.00" fill="#322A21">0</text>
+    <text x="242.20" y="242.00" fill="#0A0908">0</text>
+    <text x="245.80" y="242.00" fill="#473F35">0</text>
+    <text x="249.40" y="242.00" fill="#605142">1</text>
+    <text x="253.00" y="242.00" fill="#61503F">1</text>
+    <text x="256.60" y="242.00" fill="#675543">0</text>
+    <text x="260.20" y="242.00" fill="#5A4936">0</text>
+    <text x="263.80" y="242.00" fill="#503E2E">0</text>
+    <text x="267.40" y="242.00" fill="#4A3A2C">0</text>
+    <text x="271.00" y="242.00" fill="#49392C">0</text>
+    <text x="274.60" y="242.00" fill="#4A3A2D">0</text>
+    <text x="278.20" y="242.00" fill="#4C3E2E">0</text>
+    <text x="281.80" y="242.00" fill="#544535">1</text>
+    <text x="285.40" y="242.00" fill="#463D2D">1</text>
+    <text x="289.00" y="242.00" fill="#060504">1</text>
+    <text x="245.80" y="249.00" fill="#0D0C0B">0</text>
+    <text x="249.40" y="249.00" fill="#6A5D54">1</text>
+    <text x="253.00" y="249.00" fill="#615245">0</text>
+    <text x="256.60" y="249.00" fill="#48382A">0</text>
+    <text x="260.20" y="249.00" fill="#3A2C1F">0</text>
+    <text x="263.80" y="249.00" fill="#3C2D22">0</text>
+    <text x="267.40" y="249.00" fill="#46372A">0</text>
+    <text x="271.00" y="249.00" fill="#544233">1</text>
+    <text x="274.60" y="249.00" fill="#5A4836">0</text>
+    <text x="278.20" y="249.00" fill="#5A4935">1</text>
+    <text x="281.80" y="249.00" fill="#5A4A35">0</text>
+    <text x="285.40" y="249.00" fill="#5A4B36">1</text>
+    <text x="289.00" y="249.00" fill="#332B1F">0</text>
+    <text x="292.60" y="249.00" fill="#080805">1</text>
+    <text x="245.80" y="256.00" fill="#1B1917">0</text>
+    <text x="249.40" y="256.00" fill="#786B5C">0</text>
+    <text x="253.00" y="256.00" fill="#8D7A65">0</text>
+    <text x="256.60" y="256.00" fill="#7B6752">0</text>
+    <text x="260.20" y="256.00" fill="#685540">0</text>
+    <text x="263.80" y="256.00" fill="#5B4934">0</text>
+    <text x="267.40" y="256.00" fill="#5A4732">0</text>
+    <text x="271.00" y="256.00" fill="#5C4833">0</text>
+    <text x="274.60" y="256.00" fill="#5F4A35">1</text>
+    <text x="278.20" y="256.00" fill="#5F4936">0</text>
+    <text x="281.80" y="256.00" fill="#604A37">0</text>
+    <text x="285.40" y="256.00" fill="#604D38">0</text>
+    <text x="289.00" y="256.00" fill="#574938">1</text>
+    <text x="292.60" y="256.00" fill="#29251C">1</text>
+    <text x="296.20" y="256.00" fill="#0A0B0B">1</text>
+    <text x="299.80" y="256.00" fill="#0B0C0E">1</text>
+    <text x="303.40" y="256.00" fill="#0D0D0D">1</text>
+    <text x="307.00" y="256.00" fill="#080909">0</text>
+    <text x="310.60" y="256.00" fill="#060708">0</text>
+    <text x="314.20" y="256.00" fill="#070708">1</text>
+    <text x="317.80" y="256.00" fill="#050606">1</text>
+    <text x="227.80" y="263.00" fill="#070708">1</text>
+    <text x="231.40" y="263.00" fill="#0F1112">1</text>
+    <text x="235.00" y="263.00" fill="#222428">1</text>
+    <text x="238.60" y="263.00" fill="#2F3037">0</text>
+    <text x="242.20" y="263.00" fill="#3A3A3D">0</text>
+    <text x="245.80" y="263.00" fill="#928982">0</text>
+    <text x="249.40" y="263.00" fill="#A79684">0</text>
+    <text x="253.00" y="263.00" fill="#937D67">0</text>
+    <text x="256.60" y="263.00" fill="#866F56">1</text>
+    <text x="260.20" y="263.00" fill="#7D654C">0</text>
+    <text x="263.80" y="263.00" fill="#765D45">1</text>
+    <text x="267.40" y="263.00" fill="#6C543E">0</text>
+    <text x="271.00" y="263.00" fill="#664F3A">1</text>
+    <text x="274.60" y="263.00" fill="#65503C">1</text>
+    <text x="278.20" y="263.00" fill="#5E4C39">1</text>
+    <text x="281.80" y="263.00" fill="#534233">0</text>
+    <text x="285.40" y="263.00" fill="#413428">1</text>
+    <text x="289.00" y="263.00" fill="#1E1916">1</text>
+    <text x="292.60" y="263.00" fill="#0A0B0D">1</text>
+    <text x="296.20" y="263.00" fill="#0A0B11">0</text>
+    <text x="299.80" y="263.00" fill="#0D0D11">1</text>
+    <text x="303.40" y="263.00" fill="#111114">1</text>
+    <text x="307.00" y="263.00" fill="#111216">1</text>
+    <text x="310.60" y="263.00" fill="#111116">0</text>
+    <text x="314.20" y="263.00" fill="#121316">0</text>
+    <text x="317.80" y="263.00" fill="#1C1E21">1</text>
+    <text x="321.40" y="263.00" fill="#1E2123">1</text>
+    <text x="325.00" y="263.00" fill="#1D1F23">0</text>
+    <text x="328.60" y="263.00" fill="#1D1F22">1</text>
+    <text x="332.20" y="263.00" fill="#151618">0</text>
+    <text x="335.80" y="263.00" fill="#0C0C0C">0</text>
+    <text x="339.40" y="263.00" fill="#070806">0</text>
+    <text x="213.40" y="270.00" fill="#0D0D0F">1</text>
+    <text x="217.00" y="270.00" fill="#18191C">1</text>
+    <text x="220.60" y="270.00" fill="#2A2C31">0</text>
+    <text x="224.20" y="270.00" fill="#3E4048">1</text>
+    <text x="227.80" y="270.00" fill="#31353E">0</text>
+    <text x="231.40" y="270.00" fill="#3E434C">1</text>
+    <text x="235.00" y="270.00" fill="#494D57">1</text>
+    <text x="238.60" y="270.00" fill="#4A4E59">1</text>
+    <text x="242.20" y="270.00" fill="#3E414B">1</text>
+    <text x="245.80" y="270.00" fill="#37383E">0</text>
+    <text x="249.40" y="270.00" fill="#423E3E">1</text>
+    <text x="253.00" y="270.00" fill="#4F4944">0</text>
+    <text x="256.60" y="270.00" fill="#554B43">0</text>
+    <text x="260.20" y="270.00" fill="#5C4F47">1</text>
+    <text x="263.80" y="270.00" fill="#56493F">1</text>
+    <text x="267.40" y="270.00" fill="#4D4037">0</text>
+    <text x="271.00" y="270.00" fill="#473B33">0</text>
+    <text x="274.60" y="270.00" fill="#3C332D">0</text>
+    <text x="278.20" y="270.00" fill="#25201C">0</text>
+    <text x="281.80" y="270.00" fill="#121111">0</text>
+    <text x="285.40" y="270.00" fill="#0C0B0F">0</text>
+    <text x="289.00" y="270.00" fill="#0B0B10">1</text>
+    <text x="292.60" y="270.00" fill="#0A0B10">1</text>
+    <text x="296.20" y="270.00" fill="#0B0C11">1</text>
+    <text x="299.80" y="270.00" fill="#0C0C11">0</text>
+    <text x="303.40" y="270.00" fill="#0D0E12">0</text>
+    <text x="307.00" y="270.00" fill="#0B0C11">0</text>
+    <text x="310.60" y="270.00" fill="#0C0D11">0</text>
+    <text x="314.20" y="270.00" fill="#0D0E12">1</text>
+    <text x="317.80" y="270.00" fill="#101016">1</text>
+    <text x="321.40" y="270.00" fill="#13131C">0</text>
+    <text x="325.00" y="270.00" fill="#181721">1</text>
+    <text x="328.60" y="270.00" fill="#1C1C23">0</text>
+    <text x="332.20" y="270.00" fill="#111318">1</text>
+    <text x="335.80" y="270.00" fill="#111114">1</text>
+    <text x="339.40" y="270.00" fill="#121315">0</text>
+    <text x="343.00" y="270.00" fill="#111113">1</text>
+    <text x="346.60" y="270.00" fill="#090907">0</text>
+    <text x="202.60" y="277.00" fill="#060607">1</text>
+    <text x="206.20" y="277.00" fill="#1F1F22">0</text>
+    <text x="209.80" y="277.00" fill="#34383E">0</text>
+    <text x="213.40" y="277.00" fill="#40444E">0</text>
+    <text x="217.00" y="277.00" fill="#474D55">0</text>
+    <text x="220.60" y="277.00" fill="#3F454F">0</text>
+    <text x="224.20" y="277.00" fill="#2C323D">1</text>
+    <text x="227.80" y="277.00" fill="#2D313A">0</text>
+    <text x="231.40" y="277.00" fill="#33353F">1</text>
+    <text x="235.00" y="277.00" fill="#383E46">0</text>
+    <text x="238.60" y="277.00" fill="#3C4049">1</text>
+    <text x="242.20" y="277.00" fill="#2F333C">1</text>
+    <text x="245.80" y="277.00" fill="#262B36">1</text>
+    <text x="249.40" y="277.00" fill="#1F242F">0</text>
+    <text x="253.00" y="277.00" fill="#191C27">1</text>
+    <text x="256.60" y="277.00" fill="#161722">1</text>
+    <text x="260.20" y="277.00" fill="#12131C">0</text>
+    <text x="263.80" y="277.00" fill="#0E1018">0</text>
+    <text x="267.40" y="277.00" fill="#0B0F18">0</text>
+    <text x="271.00" y="277.00" fill="#0B0F18">0</text>
+    <text x="274.60" y="277.00" fill="#0C111A">1</text>
+    <text x="278.20" y="277.00" fill="#0D1018">1</text>
+    <text x="281.80" y="277.00" fill="#0B0E16">0</text>
+    <text x="285.40" y="277.00" fill="#0D1115">0</text>
+    <text x="289.00" y="277.00" fill="#101115">0</text>
+    <text x="292.60" y="277.00" fill="#0B0C11">0</text>
+    <text x="296.20" y="277.00" fill="#0E0E14">0</text>
+    <text x="299.80" y="277.00" fill="#0E1014">0</text>
+    <text x="303.40" y="277.00" fill="#0F1015">1</text>
+    <text x="307.00" y="277.00" fill="#0C0D12">0</text>
+    <text x="310.60" y="277.00" fill="#0D0E13">0</text>
+    <text x="314.20" y="277.00" fill="#0E1014">0</text>
+    <text x="317.80" y="277.00" fill="#0F1014">0</text>
+    <text x="321.40" y="277.00" fill="#0C0C13">0</text>
+    <text x="325.00" y="277.00" fill="#0D0D15">1</text>
+    <text x="328.60" y="277.00" fill="#111117">0</text>
+    <text x="332.20" y="277.00" fill="#0D0E13">1</text>
+    <text x="335.80" y="277.00" fill="#0B0B10">1</text>
+    <text x="339.40" y="277.00" fill="#0B0B0F">1</text>
+    <text x="343.00" y="277.00" fill="#181A1C">0</text>
+    <text x="346.60" y="277.00" fill="#111210">1</text>
+    <text x="350.20" y="277.00" fill="#13120E">1</text>
+    <text x="199.00" y="284.00" fill="#171A1B">1</text>
+    <text x="202.60" y="284.00" fill="#383C40">0</text>
+    <text x="206.20" y="284.00" fill="#333840">1</text>
+    <text x="209.80" y="284.00" fill="#2B313B">0</text>
+    <text x="213.40" y="284.00" fill="#272C36">0</text>
+    <text x="217.00" y="284.00" fill="#292C37">0</text>
+    <text x="220.60" y="284.00" fill="#161A26">1</text>
+    <text x="224.20" y="284.00" fill="#181D29">0</text>
+    <text x="227.80" y="284.00" fill="#2B2E38">1</text>
+    <text x="231.40" y="284.00" fill="#2D313B">0</text>
+    <text x="235.00" y="284.00" fill="#373E47">0</text>
+    <text x="238.60" y="284.00" fill="#383E47">1</text>
+    <text x="242.20" y="284.00" fill="#292E38">0</text>
+    <text x="245.80" y="284.00" fill="#272B37">1</text>
+    <text x="249.40" y="284.00" fill="#242833">0</text>
+    <text x="253.00" y="284.00" fill="#22252F">0</text>
+    <text x="256.60" y="284.00" fill="#222530">0</text>
+    <text x="260.20" y="284.00" fill="#20242E">0</text>
+    <text x="263.80" y="284.00" fill="#1C222C">1</text>
+    <text x="267.40" y="284.00" fill="#191E29">1</text>
+    <text x="271.00" y="284.00" fill="#181C27">0</text>
+    <text x="274.60" y="284.00" fill="#141722">0</text>
+    <text x="278.20" y="284.00" fill="#0E0F1B">0</text>
+    <text x="281.80" y="284.00" fill="#0D101B">0</text>
+    <text x="285.40" y="284.00" fill="#131620">0</text>
+    <text x="289.00" y="284.00" fill="#101118">0</text>
+    <text x="292.60" y="284.00" fill="#0B0C14">1</text>
+    <text x="296.20" y="284.00" fill="#0E111A">0</text>
+    <text x="299.80" y="284.00" fill="#0D121A">1</text>
+    <text x="303.40" y="284.00" fill="#11131C">0</text>
+    <text x="307.00" y="284.00" fill="#0B0F17">0</text>
+    <text x="310.60" y="284.00" fill="#0A1016">0</text>
+    <text x="314.20" y="284.00" fill="#0C1116">0</text>
+    <text x="317.80" y="284.00" fill="#0D1117">1</text>
+    <text x="321.40" y="284.00" fill="#0B0C14">1</text>
+    <text x="325.00" y="284.00" fill="#0B0B13">0</text>
+    <text x="328.60" y="284.00" fill="#101116">1</text>
+    <text x="332.20" y="284.00" fill="#0C0D11">0</text>
+    <text x="335.80" y="284.00" fill="#08080B">1</text>
+    <text x="339.40" y="284.00" fill="#101114">1</text>
+    <text x="343.00" y="284.00" fill="#0E0F11">0</text>
+    <text x="346.60" y="284.00" fill="#0C0C10">1</text>
+    <text x="350.20" y="284.00" fill="#0F1111">1</text>
+    <text x="353.80" y="284.00" fill="#0D0D0C">0</text>
+    <text x="357.40" y="284.00" fill="#060505">1</text>
+    <text x="195.40" y="291.00" fill="#272A2C">1</text>
+    <text x="199.00" y="291.00" fill="#383F44">1</text>
+    <text x="202.60" y="291.00" fill="#262C34">1</text>
+    <text x="206.20" y="291.00" fill="#1F232D">1</text>
+    <text x="209.80" y="291.00" fill="#1B1D28">0</text>
+    <text x="213.40" y="291.00" fill="#161824">1</text>
+    <text x="217.00" y="291.00" fill="#0A0C19">1</text>
+    <text x="220.60" y="291.00" fill="#121522">1</text>
+    <text x="224.20" y="291.00" fill="#1C1F2C">1</text>
+    <text x="227.80" y="291.00" fill="#262835">1</text>
+    <text x="231.40" y="291.00" fill="#272D38">0</text>
+    <text x="235.00" y="291.00" fill="#333844">0</text>
+    <text x="238.60" y="291.00" fill="#333843">0</text>
+    <text x="242.20" y="291.00" fill="#1C212C">1</text>
+    <text x="245.80" y="291.00" fill="#232732">0</text>
+    <text x="249.40" y="291.00" fill="#252833">1</text>
+    <text x="253.00" y="291.00" fill="#222630">1</text>
+    <text x="256.60" y="291.00" fill="#212330">0</text>
+    <text x="260.20" y="291.00" fill="#1D212D">1</text>
+    <text x="263.80" y="291.00" fill="#191C28">0</text>
+    <text x="267.40" y="291.00" fill="#191C28">0</text>
+    <text x="271.00" y="291.00" fill="#151723">1</text>
+    <text x="274.60" y="291.00" fill="#0B0E18">0</text>
+    <text x="278.20" y="291.00" fill="#0B0E19">0</text>
+    <text x="281.80" y="291.00" fill="#111620">0</text>
+    <text x="285.40" y="291.00" fill="#161C24">1</text>
+    <text x="289.00" y="291.00" fill="#080C16">0</text>
+    <text x="292.60" y="291.00" fill="#0B0F19">0</text>
+    <text x="296.20" y="291.00" fill="#0F141D">0</text>
+    <text x="299.80" y="291.00" fill="#0E151C">1</text>
+    <text x="303.40" y="291.00" fill="#10151D">0</text>
+    <text x="307.00" y="291.00" fill="#0B111A">1</text>
+    <text x="310.60" y="291.00" fill="#060E16">1</text>
+    <text x="314.20" y="291.00" fill="#0A1016">1</text>
+    <text x="317.80" y="291.00" fill="#0B1018">0</text>
+    <text x="321.40" y="291.00" fill="#0B0D16">0</text>
+    <text x="325.00" y="291.00" fill="#080910">0</text>
+    <text x="328.60" y="291.00" fill="#0F1015">0</text>
+    <text x="332.20" y="291.00" fill="#0B0D11">1</text>
+    <text x="335.80" y="291.00" fill="#0B0B11">0</text>
+    <text x="339.40" y="291.00" fill="#0D0E12">1</text>
+    <text x="343.00" y="291.00" fill="#07070C">0</text>
+    <text x="346.60" y="291.00" fill="#07070B">0</text>
+    <text x="350.20" y="291.00" fill="#060A0B">1</text>
+    <text x="353.80" y="291.00" fill="#0A0D11">0</text>
+    <text x="357.40" y="291.00" fill="#0B0C0B">0</text>
+    <text x="191.80" y="298.00" fill="#2D3133">1</text>
+    <text x="195.40" y="298.00" fill="#3D454A">1</text>
+    <text x="199.00" y="298.00" fill="#2D333B">1</text>
+    <text x="202.60" y="298.00" fill="#1C1E2A">0</text>
+    <text x="206.20" y="298.00" fill="#131521">0</text>
+    <text x="209.80" y="298.00" fill="#141522">0</text>
+    <text x="213.40" y="298.00" fill="#10111E">0</text>
+    <text x="217.00" y="298.00" fill="#090B18">1</text>
+    <text x="220.60" y="298.00" fill="#0F111F">0</text>
+    <text x="224.20" y="298.00" fill="#171A27">1</text>
+    <text x="227.80" y="298.00" fill="#1D202D">1</text>
+    <text x="231.40" y="298.00" fill="#1D212D">0</text>
+    <text x="235.00" y="298.00" fill="#262936">1</text>
+    <text x="238.60" y="298.00" fill="#242935">0</text>
+    <text x="242.20" y="298.00" fill="#131824">1</text>
+    <text x="245.80" y="298.00" fill="#222532">0</text>
+    <text x="249.40" y="298.00" fill="#232733">1</text>
+    <text x="253.00" y="298.00" fill="#212531">1</text>
+    <text x="256.60" y="298.00" fill="#1E222D">0</text>
+    <text x="260.20" y="298.00" fill="#1D1E2C">0</text>
+    <text x="263.80" y="298.00" fill="#151723">0</text>
+    <text x="267.40" y="298.00" fill="#131622">1</text>
+    <text x="271.00" y="298.00" fill="#10131D">1</text>
+    <text x="274.60" y="298.00" fill="#0B0E18">0</text>
+    <text x="278.20" y="298.00" fill="#0C111C">0</text>
+    <text x="281.80" y="298.00" fill="#191D27">1</text>
+    <text x="285.40" y="298.00" fill="#11181F">1</text>
+    <text x="289.00" y="298.00" fill="#050B11">1</text>
+    <text x="292.60" y="298.00" fill="#0D111A">1</text>
+    <text x="296.20" y="298.00" fill="#10141E">1</text>
+    <text x="299.80" y="298.00" fill="#0F151C">1</text>
+    <text x="303.40" y="298.00" fill="#11161D">0</text>
+    <text x="307.00" y="298.00" fill="#0F141D">1</text>
+    <text x="310.60" y="298.00" fill="#060B13">1</text>
+    <text x="314.20" y="298.00" fill="#070B12">1</text>
+    <text x="317.80" y="298.00" fill="#0A0F16">1</text>
+    <text x="321.40" y="298.00" fill="#0A0D16">1</text>
+    <text x="325.00" y="298.00" fill="#050610">1</text>
+    <text x="328.60" y="298.00" fill="#0D0E15">1</text>
+    <text x="332.20" y="298.00" fill="#0B0B13">1</text>
+    <text x="335.80" y="298.00" fill="#0B0B11">1</text>
+    <text x="339.40" y="298.00" fill="#09090D">0</text>
+    <text x="343.00" y="298.00" fill="#05060B">0</text>
+    <text x="346.60" y="298.00" fill="#0A0B0F">1</text>
+    <text x="350.20" y="298.00" fill="#0B0D11">0</text>
+    <text x="353.80" y="298.00" fill="#080C10">0</text>
+    <text x="357.40" y="298.00" fill="#050B09">1</text>
+    <text x="361.00" y="298.00" fill="#050604">1</text>
+    <text x="188.20" y="305.00" fill="#23252B">0</text>
+    <text x="191.80" y="305.00" fill="#333841">1</text>
+    <text x="195.40" y="305.00" fill="#30353E">1</text>
+    <text x="199.00" y="305.00" fill="#292C36">0</text>
+    <text x="202.60" y="305.00" fill="#23242F">0</text>
+    <text x="206.20" y="305.00" fill="#131521">0</text>
+    <text x="209.80" y="305.00" fill="#0C0E1A">0</text>
+    <text x="213.40" y="305.00" fill="#10121D">0</text>
+    <text x="217.00" y="305.00" fill="#090C18">1</text>
+    <text x="220.60" y="305.00" fill="#0B0F1B">0</text>
+    <text x="224.20" y="305.00" fill="#111320">0</text>
+    <text x="227.80" y="305.00" fill="#131622">0</text>
+    <text x="231.40" y="305.00" fill="#151623">0</text>
+    <text x="235.00" y="305.00" fill="#232532">0</text>
+    <text x="238.60" y="305.00" fill="#141823">1</text>
+    <text x="242.20" y="305.00" fill="#141723">1</text>
+    <text x="245.80" y="305.00" fill="#232533">1</text>
+    <text x="249.40" y="305.00" fill="#222431">1</text>
+    <text x="253.00" y="305.00" fill="#1D202D">1</text>
+    <text x="256.60" y="305.00" fill="#171A27">0</text>
+    <text x="260.20" y="305.00" fill="#131622">1</text>
+    <text x="263.80" y="305.00" fill="#0E111C">1</text>
+    <text x="267.40" y="305.00" fill="#0C111A">1</text>
+    <text x="271.00" y="305.00" fill="#0D111C">0</text>
+    <text x="274.60" y="305.00" fill="#0E111C">0</text>
+    <text x="278.20" y="305.00" fill="#151722">0</text>
+    <text x="281.80" y="305.00" fill="#20222D">0</text>
+    <text x="285.40" y="305.00" fill="#0C1119">0</text>
+    <text x="289.00" y="305.00" fill="#050B12">1</text>
+    <text x="292.60" y="305.00" fill="#0C111A">1</text>
+    <text x="296.20" y="305.00" fill="#10131E">0</text>
+    <text x="299.80" y="305.00" fill="#10121E">0</text>
+    <text x="303.40" y="305.00" fill="#111420">1</text>
+    <text x="307.00" y="305.00" fill="#13151F">1</text>
+    <text x="310.60" y="305.00" fill="#0A0C12">1</text>
+    <text x="314.20" y="305.00" fill="#060A0F">0</text>
+    <text x="317.80" y="305.00" fill="#090C14">0</text>
+    <text x="321.40" y="305.00" fill="#060912">1</text>
+    <text x="325.00" y="305.00" fill="#05050E">0</text>
+    <text x="328.60" y="305.00" fill="#0B0D15">0</text>
+    <text x="332.20" y="305.00" fill="#0B0C14">1</text>
+    <text x="335.80" y="305.00" fill="#08080F">1</text>
+    <text x="339.40" y="305.00" fill="#05060B">0</text>
+    <text x="343.00" y="305.00" fill="#0C0F13">1</text>
+    <text x="346.60" y="305.00" fill="#0F1115">0</text>
+    <text x="350.20" y="305.00" fill="#06070B">0</text>
+    <text x="353.80" y="305.00" fill="#05070B">0</text>
+    <text x="357.40" y="305.00" fill="#05090B">1</text>
+    <text x="361.00" y="305.00" fill="#080908">0</text>
+    <text x="184.60" y="312.00" fill="#111215">0</text>
+    <text x="188.20" y="312.00" fill="#31343E">1</text>
+    <text x="191.80" y="312.00" fill="#222733">1</text>
+    <text x="195.40" y="312.00" fill="#141823">0</text>
+    <text x="199.00" y="312.00" fill="#171A26">0</text>
+    <text x="202.60" y="312.00" fill="#1A1C27">0</text>
+    <text x="206.20" y="312.00" fill="#161824">0</text>
+    <text x="209.80" y="312.00" fill="#0D111C">1</text>
+    <text x="213.40" y="312.00" fill="#0D121C">0</text>
+    <text x="217.00" y="312.00" fill="#080D18">0</text>
+    <text x="220.60" y="312.00" fill="#090F19">0</text>
+    <text x="224.20" y="312.00" fill="#0E111E">0</text>
+    <text x="227.80" y="312.00" fill="#111421">0</text>
+    <text x="231.40" y="312.00" fill="#171927">1</text>
+    <text x="235.00" y="312.00" fill="#252733">1</text>
+    <text x="238.60" y="312.00" fill="#0F111D">0</text>
+    <text x="242.20" y="312.00" fill="#151622">1</text>
+    <text x="245.80" y="312.00" fill="#1F212D">0</text>
+    <text x="249.40" y="312.00" fill="#1C1E2B">1</text>
+    <text x="253.00" y="312.00" fill="#121622">0</text>
+    <text x="256.60" y="312.00" fill="#0B0F1B">0</text>
+    <text x="260.20" y="312.00" fill="#090E19">1</text>
+    <text x="263.80" y="312.00" fill="#0B101B">11</text>
+    <text x="271.00" y="312.00" fill="#0B101B">0</text>
+    <text x="274.60" y="312.00" fill="#0F141F">0</text>
+    <text x="278.20" y="312.00" fill="#1A1C27">0</text>
+    <text x="281.80" y="312.00" fill="#20222D">0</text>
+    <text x="285.40" y="312.00" fill="#11141E">0</text>
+    <text x="289.00" y="312.00" fill="#060911">1</text>
+    <text x="292.60" y="312.00" fill="#0A0D15">1</text>
+    <text x="296.20" y="312.00" fill="#0F111C">1</text>
+    <text x="299.80" y="312.00" fill="#0F111D">0</text>
+    <text x="303.40" y="312.00" fill="#11111D">0</text>
+    <text x="307.00" y="312.00" fill="#12131C">0</text>
+    <text x="310.60" y="312.00" fill="#0C1015">0</text>
+    <text x="314.20" y="312.00" fill="#060A11">10</text>
+    <text x="321.40" y="312.00" fill="#04070E">1</text>
+    <text x="325.00" y="312.00" fill="#05050E">1</text>
+    <text x="328.60" y="312.00" fill="#0B0B14">0</text>
+    <text x="332.20" y="312.00" fill="#090A11">0</text>
+    <text x="335.80" y="312.00" fill="#03050C">0</text>
+    <text x="339.40" y="312.00" fill="#0A0D14">0</text>
+    <text x="343.00" y="312.00" fill="#10131A">1</text>
+    <text x="346.60" y="312.00" fill="#080B11">1</text>
+    <text x="350.20" y="312.00" fill="#05080D">0</text>
+    <text x="353.80" y="312.00" fill="#090A0F">1</text>
+    <text x="357.40" y="312.00" fill="#0B0C11">0</text>
+    <text x="361.00" y="312.00" fill="#0C0D10">1</text>
+    <text x="364.60" y="312.00" fill="#0B0B0C">1</text>
+    <text x="184.60" y="319.00" fill="#25272C">0</text>
+    <text x="188.20" y="319.00" fill="#2F333E">1</text>
+    <text x="191.80" y="319.00" fill="#1C212D">1</text>
+    <text x="195.40" y="319.00" fill="#151A27">1</text>
+    <text x="199.00" y="319.00" fill="#131723">1</text>
+    <text x="202.60" y="319.00" fill="#121621">0</text>
+    <text x="206.20" y="319.00" fill="#0F121C">0</text>
+    <text x="209.80" y="319.00" fill="#0A0D19">0</text>
+    <text x="213.40" y="319.00" fill="#0D111D">1</text>
+    <text x="217.00" y="319.00" fill="#090D1A">0</text>
+    <text x="220.60" y="319.00" fill="#090E1A">0</text>
+    <text x="224.20" y="319.00" fill="#0B111C">0</text>
+    <text x="227.80" y="319.00" fill="#111421">1</text>
+    <text x="231.40" y="319.00" fill="#1E212D">0</text>
+    <text x="235.00" y="319.00" fill="#1C202B">1</text>
+    <text x="238.60" y="319.00" fill="#0E111C">1</text>
+    <text x="242.20" y="319.00" fill="#171A27">0</text>
+    <text x="245.80" y="319.00" fill="#1B1F2C">0</text>
+    <text x="249.40" y="319.00" fill="#0B111C">1</text>
+    <text x="253.00" y="319.00" fill="#080E18">1</text>
+    <text x="256.60" y="319.00" fill="#090E19">0</text>
+    <text x="260.20" y="319.00" fill="#0A0D19">1</text>
+    <text x="263.80" y="319.00" fill="#0B0E19">1</text>
+    <text x="267.40" y="319.00" fill="#0B0D1A">0</text>
+    <text x="271.00" y="319.00" fill="#0B0F1C">0</text>
+    <text x="274.60" y="319.00" fill="#111622">1</text>
+    <text x="278.20" y="319.00" fill="#1B1C28">0</text>
+    <text x="281.80" y="319.00" fill="#1C202A">1</text>
+    <text x="285.40" y="319.00" fill="#191C26">0</text>
+    <text x="289.00" y="319.00" fill="#0A0B13">0</text>
+    <text x="292.60" y="319.00" fill="#06090D">1</text>
+    <text x="296.20" y="319.00" fill="#0D1018">1</text>
+    <text x="299.80" y="319.00" fill="#0E121C">1</text>
+    <text x="303.40" y="319.00" fill="#0F131C">0</text>
+    <text x="307.00" y="319.00" fill="#11131B">1</text>
+    <text x="310.60" y="319.00" fill="#0F1118">1</text>
+    <text x="314.20" y="319.00" fill="#070A11">0</text>
+    <text x="317.80" y="319.00" fill="#05070D">1</text>
+    <text x="321.40" y="319.00" fill="#04050D">1</text>
+    <text x="325.00" y="319.00" fill="#05050E">1</text>
+    <text x="328.60" y="319.00" fill="#0A0A11">0</text>
+    <text x="332.20" y="319.00" fill="#050710">1</text>
+    <text x="335.80" y="319.00" fill="#050912">1</text>
+    <text x="339.40" y="319.00" fill="#11131E">1</text>
+    <text x="343.00" y="319.00" fill="#0E101C">1</text>
+    <text x="346.60" y="319.00" fill="#0B0C16">0</text>
+    <text x="350.20" y="319.00" fill="#0E0F15">1</text>
+    <text x="353.80" y="319.00" fill="#101015">1</text>
+    <text x="357.40" y="319.00" fill="#0F1014">0</text>
+    <text x="361.00" y="319.00" fill="#0E0F13">1</text>
+    <text x="364.60" y="319.00" fill="#0D0E11">0</text>
+    <text x="368.20" y="319.00" fill="#0E0E11">0</text>
+    <text x="181.00" y="326.00" fill="#0F0F11">1</text>
+    <text x="184.60" y="326.00" fill="#2E2E37">1</text>
+    <text x="188.20" y="326.00" fill="#2A2B36">0</text>
+    <text x="191.80" y="326.00" fill="#1C212C">0</text>
+    <text x="195.40" y="326.00" fill="#151924">0</text>
+    <text x="199.00" y="326.00" fill="#141822">0</text>
+    <text x="202.60" y="326.00" fill="#121620">0</text>
+    <text x="206.20" y="326.00" fill="#11131D">1</text>
+    <text x="209.80" y="326.00" fill="#070915">1</text>
+    <text x="213.40" y="326.00" fill="#0C0F1C">0</text>
+    <text x="217.00" y="326.00" fill="#0B0F1A">0</text>
+    <text x="220.60" y="326.00" fill="#0B0E1A">1</text>
+    <text x="224.20" y="326.00" fill="#0C101D">1</text>
+    <text x="227.80" y="326.00" fill="#111422">1</text>
+    <text x="231.40" y="326.00" fill="#202230">0</text>
+    <text x="235.00" y="326.00" fill="#181C27">1</text>
+    <text x="238.60" y="326.00" fill="#161925">0</text>
+    <text x="242.20" y="326.00" fill="#1E202D">1</text>
+    <text x="245.80" y="326.00" fill="#10121F">0</text>
+    <text x="249.40" y="326.00" fill="#070B16">0</text>
+    <text x="253.00" y="326.00" fill="#090C16">1</text>
+    <text x="256.60" y="326.00" fill="#090C17">1</text>
+    <text x="260.20" y="326.00" fill="#0D101C">1</text>
+    <text x="263.80" y="326.00" fill="#111420">0</text>
+    <text x="267.40" y="326.00" fill="#131522">0</text>
+    <text x="271.00" y="326.00" fill="#151724">0</text>
+    <text x="274.60" y="326.00" fill="#191C29">1</text>
+    <text x="278.20" y="326.00" fill="#1C1E2B">11</text>
+    <text x="285.40" y="326.00" fill="#1C1E2A">1</text>
+    <text x="289.00" y="326.00" fill="#11131D">1</text>
+    <text x="292.60" y="326.00" fill="#050610">1</text>
+    <text x="296.20" y="326.00" fill="#0A0B16">0</text>
+    <text x="299.80" y="326.00" fill="#0E111B">0</text>
+    <text x="303.40" y="326.00" fill="#0E121C">1</text>
+    <text x="307.00" y="326.00" fill="#11121C">0</text>
+    <text x="310.60" y="326.00" fill="#11131C">1</text>
+    <text x="314.20" y="326.00" fill="#0A0C14">0</text>
+    <text x="317.80" y="326.00" fill="#03050C">1</text>
+    <text x="321.40" y="326.00" fill="#03050B">0</text>
+    <text x="325.00" y="326.00" fill="#04050B">0</text>
+    <text x="328.60" y="326.00" fill="#06070B">1</text>
+    <text x="332.20" y="326.00" fill="#04060C">0</text>
+    <text x="335.80" y="326.00" fill="#090B12">1</text>
+    <text x="339.40" y="326.00" fill="#13121C">0</text>
+    <text x="343.00" y="326.00" fill="#0E0E16">1</text>
+    <text x="346.60" y="326.00" fill="#0C0C13">0</text>
+    <text x="350.20" y="326.00" fill="#0E0E12">1</text>
+    <text x="353.80" y="326.00" fill="#0E0F13">0</text>
+    <text x="357.40" y="326.00" fill="#101115">1</text>
+    <text x="361.00" y="326.00" fill="#111216">1</text>
+    <text x="364.60" y="326.00" fill="#121318">1</text>
+    <text x="368.20" y="326.00" fill="#121319">1</text>
+    <text x="371.80" y="326.00" fill="#0B0B0B">0</text>
+    <text x="181.00" y="333.00" fill="#1F2226">1</text>
+    <text x="184.60" y="333.00" fill="#2B2D38">0</text>
+    <text x="188.20" y="333.00" fill="#272833">0</text>
+    <text x="191.80" y="333.00" fill="#1F222D">0</text>
+    <text x="195.40" y="333.00" fill="#161A24">0</text>
+    <text x="199.00" y="333.00" fill="#121620">0</text>
+    <text x="202.60" y="333.00" fill="#11131D">0</text>
+    <text x="206.20" y="333.00" fill="#11121C">1</text>
+    <text x="209.80" y="333.00" fill="#0B0C17">1</text>
+    <text x="213.40" y="333.00" fill="#0A0B17">0</text>
+    <text x="217.00" y="333.00" fill="#0B0D19">0</text>
+    <text x="220.60" y="333.00" fill="#0C0D1C">1</text>
+    <text x="224.20" y="333.00" fill="#0D111F">1</text>
+    <text x="227.80" y="333.00" fill="#101522">0</text>
+    <text x="231.40" y="333.00" fill="#1B1D2A">1</text>
+    <text x="235.00" y="333.00" fill="#1C202C">1</text>
+    <text x="238.60" y="333.00" fill="#1D202D">1</text>
+    <text x="242.20" y="333.00" fill="#131522">0</text>
+    <text x="245.80" y="333.00" fill="#0A0B18">00</text>
+    <text x="253.00" y="333.00" fill="#0B0D1A">0</text>
+    <text x="256.60" y="333.00" fill="#111320">0</text>
+    <text x="260.20" y="333.00" fill="#1A1C28">0</text>
+    <text x="263.80" y="333.00" fill="#1C1D2B">1</text>
+    <text x="267.40" y="333.00" fill="#20212E">1</text>
+    <text x="271.00" y="333.00" fill="#21242F">0</text>
+    <text x="274.60" y="333.00" fill="#20242F">0</text>
+    <text x="278.20" y="333.00" fill="#21232E">1</text>
+    <text x="281.80" y="333.00" fill="#21222E">1</text>
+    <text x="285.40" y="333.00" fill="#20222E">0</text>
+    <text x="289.00" y="333.00" fill="#1B1C27">0</text>
+    <text x="292.60" y="333.00" fill="#060911">0</text>
+    <text x="296.20" y="333.00" fill="#080B13">0</text>
+    <text x="299.80" y="333.00" fill="#10111C">0</text>
+    <text x="303.40" y="333.00" fill="#0F121C">0</text>
+    <text x="307.00" y="333.00" fill="#10111C">0</text>
+    <text x="310.60" y="333.00" fill="#11121C">0</text>
+    <text x="314.20" y="333.00" fill="#0D1017">1</text>
+    <text x="317.80" y="333.00" fill="#04060B">0</text>
+    <text x="321.40" y="333.00" fill="#04050A">0</text>
+    <text x="325.00" y="333.00" fill="#040408">1</text>
+    <text x="328.60" y="333.00" fill="#040509">1</text>
+    <text x="332.20" y="333.00" fill="#03040B">0</text>
+    <text x="335.80" y="333.00" fill="#03040B">1</text>
+    <text x="339.40" y="333.00" fill="#06070C">1</text>
+    <text x="343.00" y="333.00" fill="#080A0E">0</text>
+    <text x="346.60" y="333.00" fill="#0E1114">0</text>
+    <text x="350.20" y="333.00" fill="#111216">1</text>
+    <text x="353.80" y="333.00" fill="#111217">0</text>
+    <text x="357.40" y="333.00" fill="#0E0F14">1</text>
+    <text x="361.00" y="333.00" fill="#0C0C11">1</text>
+    <text x="364.60" y="333.00" fill="#111215">0</text>
+    <text x="368.20" y="333.00" fill="#1C1E1E">0</text>
+    <text x="371.80" y="333.00" fill="#2B2D24">0</text>
+    <text x="375.40" y="333.00" fill="#33332B">0</text>
+    <text x="379.00" y="333.00" fill="#3C3C33">0</text>
+    <text x="382.60" y="333.00" fill="#3D3C35">1</text>
+    <text x="386.20" y="333.00" fill="#31312B">0</text>
+    <text x="389.80" y="333.00" fill="#20211C">0</text>
+    <text x="393.40" y="333.00" fill="#0B0B0B">1</text>
+    <text x="177.40" y="340.00" fill="#0B0C0C">0</text>
+    <text x="181.00" y="340.00" fill="#293035">1</text>
+    <text x="184.60" y="340.00" fill="#292E38">0</text>
+    <text x="188.20" y="340.00" fill="#272833">0</text>
+    <text x="191.80" y="340.00" fill="#191B26">0</text>
+    <text x="195.40" y="340.00" fill="#11131E">0</text>
+    <text x="199.00" y="340.00" fill="#10131D">1</text>
+    <text x="202.60" y="340.00" fill="#0D111A">0</text>
+    <text x="206.20" y="340.00" fill="#0D1119">0</text>
+    <text x="209.80" y="340.00" fill="#0B0F16">1</text>
+    <text x="213.40" y="340.00" fill="#060A12">0</text>
+    <text x="217.00" y="340.00" fill="#0B0D17">0</text>
+    <text x="220.60" y="340.00" fill="#0C0E1B">0</text>
+    <text x="224.20" y="340.00" fill="#10131E">0</text>
+    <text x="227.80" y="340.00" fill="#151923">1</text>
+    <text x="231.40" y="340.00" fill="#191B27">1</text>
+    <text x="235.00" y="340.00" fill="#1F212D">0</text>
+    <text x="238.60" y="340.00" fill="#161624">0</text>
+    <text x="242.20" y="340.00" fill="#0F111D">11</text>
+    <text x="249.40" y="340.00" fill="#10121E">1</text>
+    <text x="253.00" y="340.00" fill="#161926">1</text>
+    <text x="256.60" y="340.00" fill="#222331">0</text>
+    <text x="260.20" y="340.00" fill="#272835">0</text>
+    <text x="263.80" y="340.00" fill="#292B38">0</text>
+    <text x="267.40" y="340.00" fill="#2C2E3B">1</text>
+    <text x="271.00" y="340.00" fill="#2C2D39">1</text>
+    <text x="274.60" y="340.00" fill="#282A35">0</text>
+    <text x="278.20" y="340.00" fill="#272833">1</text>
+    <text x="281.80" y="340.00" fill="#262733">0</text>
+    <text x="285.40" y="340.00" fill="#272933">1</text>
+    <text x="289.00" y="340.00" fill="#1A1C24">1</text>
+    <text x="292.60" y="340.00" fill="#04050B">0</text>
+    <text x="296.20" y="340.00" fill="#080B11">0</text>
+    <text x="299.80" y="340.00" fill="#0C0F18">1</text>
+    <text x="303.40" y="340.00" fill="#0B0C16">1</text>
+    <text x="307.00" y="340.00" fill="#0A0C14">0</text>
+    <text x="310.60" y="340.00" fill="#0B0D16">1</text>
+    <text x="314.20" y="340.00" fill="#0C0D14">0</text>
+    <text x="317.80" y="340.00" fill="#000407">1</text>
+    <text x="328.60" y="340.00" fill="#030407">1</text>
+    <text x="332.20" y="340.00" fill="#0E0C11">1</text>
+    <text x="335.80" y="340.00" fill="#211D1D">0</text>
+    <text x="339.40" y="340.00" fill="#3F3A33">0</text>
+    <text x="343.00" y="340.00" fill="#5E5549">1</text>
+    <text x="346.60" y="340.00" fill="#6B6054">1</text>
+    <text x="350.20" y="340.00" fill="#66584E">0</text>
+    <text x="353.80" y="340.00" fill="#534940">0</text>
+    <text x="357.40" y="340.00" fill="#3F3C33">0</text>
+    <text x="361.00" y="340.00" fill="#46473D">0</text>
+    <text x="364.60" y="340.00" fill="#515548">1</text>
+    <text x="368.20" y="340.00" fill="#525847">1</text>
+    <text x="371.80" y="340.00" fill="#595F4C">0</text>
+    <text x="375.40" y="340.00" fill="#606551">1</text>
+    <text x="379.00" y="340.00" fill="#626552">1</text>
+    <text x="382.60" y="340.00" fill="#61634F">1</text>
+    <text x="386.20" y="340.00" fill="#646650">1</text>
+    <text x="389.80" y="340.00" fill="#666855">0</text>
+    <text x="393.40" y="340.00" fill="#5E6152">0</text>
+    <text x="397.00" y="340.00" fill="#3E3F38">0</text>
+    <text x="400.60" y="340.00" fill="#0E0E0D">0</text>
+    <text x="177.40" y="347.00" fill="#1C1F21">1</text>
+    <text x="181.00" y="347.00" fill="#293137">0</text>
+    <text x="184.60" y="347.00" fill="#2C3239">1</text>
+    <text x="188.20" y="347.00" fill="#22262E">0</text>
+    <text x="191.80" y="347.00" fill="#10111B">1</text>
+    <text x="195.40" y="347.00" fill="#0D1018">0</text>
+    <text x="199.00" y="347.00" fill="#0C111A">1</text>
+    <text x="202.60" y="347.00" fill="#0D111B">1</text>
+    <text x="206.20" y="347.00" fill="#10131D">1</text>
+    <text x="209.80" y="347.00" fill="#0E111B">0</text>
+    <text x="213.40" y="347.00" fill="#050A10">1</text>
+    <text x="217.00" y="347.00" fill="#070B11">1</text>
+    <text x="220.60" y="347.00" fill="#0B0E18">1</text>
+    <text x="224.20" y="347.00" fill="#131520">1</text>
+    <text x="227.80" y="347.00" fill="#1D1F2B">0</text>
+    <text x="231.40" y="347.00" fill="#20222E">1</text>
+    <text x="235.00" y="347.00" fill="#1E202D">1</text>
+    <text x="238.60" y="347.00" fill="#1D1F2C">1</text>
+    <text x="242.20" y="347.00" fill="#1C1E2B">1</text>
+    <text x="245.80" y="347.00" fill="#1C1E2A">0</text>
+    <text x="249.40" y="347.00" fill="#1E202C">0</text>
+    <text x="253.00" y="347.00" fill="#232631">0</text>
+    <text x="256.60" y="347.00" fill="#2A2D38">0</text>
+    <text x="260.20" y="347.00" fill="#2E313C">1</text>
+    <text x="263.80" y="347.00" fill="#2E323D">0</text>
+    <text x="267.40" y="347.00" fill="#2D2F3A">0</text>
+    <text x="271.00" y="347.00" fill="#292D38">0</text>
+    <text x="274.60" y="347.00" fill="#272A34">0</text>
+    <text x="278.20" y="347.00" fill="#232732">1</text>
+    <text x="281.80" y="347.00" fill="#20252E">1</text>
+    <text x="285.40" y="347.00" fill="#222630">1</text>
+    <text x="289.00" y="347.00" fill="#060A11">1</text>
+    <text x="292.60" y="347.00" fill="#020508">0</text>
+    <text x="296.20" y="347.00" fill="#1E2022">0</text>
+    <text x="299.80" y="347.00" fill="#363436">0</text>
+    <text x="303.40" y="347.00" fill="#403B38">0</text>
+    <text x="307.00" y="347.00" fill="#4A443E">0</text>
+    <text x="310.60" y="347.00" fill="#514A42">1</text>
+    <text x="314.20" y="347.00" fill="#5C5549">1</text>
+    <text x="317.80" y="347.00" fill="#5F5549">0</text>
+    <text x="321.40" y="347.00" fill="#5E5348">0</text>
+    <text x="325.00" y="347.00" fill="#64584C">0</text>
+    <text x="328.60" y="347.00" fill="#6E5F52">1</text>
+    <text x="332.20" y="347.00" fill="#7D6B5B">0</text>
+    <text x="335.80" y="347.00" fill="#887660">1</text>
+    <text x="339.40" y="347.00" fill="#8A7660">0</text>
+    <text x="343.00" y="347.00" fill="#82715B">1</text>
+    <text x="346.60" y="347.00" fill="#81745E">0</text>
+    <text x="350.20" y="347.00" fill="#807966">0</text>
+    <text x="353.80" y="347.00" fill="#72725F">1</text>
+    <text x="357.40" y="347.00" fill="#6A6E5A">1</text>
+    <text x="361.00" y="347.00" fill="#696E5A">1</text>
+    <text x="364.60" y="347.00" fill="#666F5A">0</text>
+    <text x="368.20" y="347.00" fill="#616B57">1</text>
+    <text x="371.80" y="347.00" fill="#5B6551">0</text>
+    <text x="375.40" y="347.00" fill="#555E4A">1</text>
+    <text x="379.00" y="347.00" fill="#525744">1</text>
+    <text x="382.60" y="347.00" fill="#4E513E">1</text>
+    <text x="386.20" y="347.00" fill="#4C4F3E">0</text>
+    <text x="389.80" y="347.00" fill="#4E5140">0</text>
+    <text x="393.40" y="347.00" fill="#484D3B">1</text>
+    <text x="397.00" y="347.00" fill="#454938">0</text>
+    <text x="400.60" y="347.00" fill="#3F4336">0</text>
+    <text x="404.20" y="347.00" fill="#1C1D18">0</text>
+    <text x="173.80" y="354.00" fill="#080808">0</text>
+    <text x="177.40" y="354.00" fill="#292F31">1</text>
+    <text x="181.00" y="354.00" fill="#242B31">0</text>
+    <text x="184.60" y="354.00" fill="#1D232B">0</text>
+    <text x="188.20" y="354.00" fill="#161C23">1</text>
+    <text x="191.80" y="354.00" fill="#141722">0</text>
+    <text x="195.40" y="354.00" fill="#12161F">1</text>
+    <text x="199.00" y="354.00" fill="#11151D">1</text>
+    <text x="202.60" y="354.00" fill="#12141E">0</text>
+    <text x="206.20" y="354.00" fill="#0C0F19">0</text>
+    <text x="209.80" y="354.00" fill="#080B13">0</text>
+    <text x="213.40" y="354.00" fill="#05070D">1</text>
+    <text x="217.00" y="354.00" fill="#02050A">1</text>
+    <text x="220.60" y="354.00" fill="#03050B">0</text>
+    <text x="224.20" y="354.00" fill="#090B16">1</text>
+    <text x="227.80" y="354.00" fill="#141521">1</text>
+    <text x="231.40" y="354.00" fill="#1E202D">1</text>
+    <text x="235.00" y="354.00" fill="#242734">0</text>
+    <text x="238.60" y="354.00" fill="#232633">1</text>
+    <text x="242.20" y="354.00" fill="#1D202D">1</text>
+    <text x="245.80" y="354.00" fill="#1B1C29">1</text>
+    <text x="249.40" y="354.00" fill="#272A36">1</text>
+    <text x="253.00" y="354.00" fill="#2A2E37">1</text>
+    <text x="256.60" y="354.00" fill="#2C2F38">1</text>
+    <text x="260.20" y="354.00" fill="#2D3039">0</text>
+    <text x="263.80" y="354.00" fill="#2C2F39">0</text>
+    <text x="267.40" y="354.00" fill="#282C36">0</text>
+    <text x="271.00" y="354.00" fill="#222731">0</text>
+    <text x="274.60" y="354.00" fill="#22252E">0</text>
+    <text x="278.20" y="354.00" fill="#25272D">0</text>
+    <text x="281.80" y="354.00" fill="#303234">0</text>
+    <text x="285.40" y="354.00" fill="#403F40">0</text>
+    <text x="289.00" y="354.00" fill="#504948">1</text>
+    <text x="292.60" y="354.00" fill="#776B62">0</text>
+    <text x="296.20" y="354.00" fill="#948577">1</text>
+    <text x="299.80" y="354.00" fill="#9E8D7B">1</text>
+    <text x="303.40" y="354.00" fill="#9D8C75">0</text>
+    <text x="307.00" y="354.00" fill="#97826A">1</text>
+    <text x="310.60" y="354.00" fill="#8F7A63">0</text>
+    <text x="314.20" y="354.00" fill="#7B6650">0</text>
+    <text x="317.80" y="354.00" fill="#745F49">0</text>
+    <text x="321.40" y="354.00" fill="#715E48">1</text>
+    <text x="325.00" y="354.00" fill="#6F5A45">0</text>
+    <text x="328.60" y="354.00" fill="#66533E">1</text>
+    <text x="332.20" y="354.00" fill="#5D4E36">0</text>
+    <text x="335.80" y="354.00" fill="#665D45">0</text>
+    <text x="339.40" y="354.00" fill="#6F6D57">1</text>
+    <text x="343.00" y="354.00" fill="#666B56">0</text>
+    <text x="346.60" y="354.00" fill="#565C4A">0</text>
+    <text x="350.20" y="354.00" fill="#535A49">0</text>
+    <text x="353.80" y="354.00" fill="#5A624F">1</text>
+    <text x="357.40" y="354.00" fill="#616855">0</text>
+    <text x="361.00" y="354.00" fill="#636B59">0</text>
+    <text x="364.60" y="354.00" fill="#5F6955">0</text>
+    <text x="368.20" y="354.00" fill="#5B6550">1</text>
+    <text x="371.80" y="354.00" fill="#525944">0</text>
+    <text x="375.40" y="354.00" fill="#454B38">0</text>
+    <text x="379.00" y="354.00" fill="#434937">1</text>
+    <text x="382.60" y="354.00" fill="#444837">1</text>
+    <text x="386.20" y="354.00" fill="#404433">0</text>
+    <text x="389.80" y="354.00" fill="#383C2C">0</text>
+    <text x="393.40" y="354.00" fill="#333828">1</text>
+    <text x="397.00" y="354.00" fill="#303524">1</text>
+    <text x="400.60" y="354.00" fill="#333626">1</text>
+    <text x="404.20" y="354.00" fill="#383C2D">0</text>
+    <text x="173.80" y="361.00" fill="#0A0A09">0</text>
+    <text x="177.40" y="361.00" fill="#181A1D">0</text>
+    <text x="181.00" y="361.00" fill="#0F131A">0</text>
+    <text x="184.60" y="361.00" fill="#12161E">1</text>
+    <text x="188.20" y="361.00" fill="#141720">1</text>
+    <text x="191.80" y="361.00" fill="#11131C">0</text>
+    <text x="195.40" y="361.00" fill="#1A1C25">1</text>
+    <text x="199.00" y="361.00" fill="#21222A">1</text>
+    <text x="202.60" y="361.00" fill="#1D2025">0</text>
+    <text x="206.20" y="361.00" fill="#13161A">0</text>
+    <text x="209.80" y="361.00" fill="#04050B">0</text>
+    <text x="213.40" y="361.00" fill="#000007">0</text>
+    <text x="217.00" y="361.00" fill="#060911">1</text>
+    <text x="220.60" y="361.00" fill="#0B0E16">1</text>
+    <text x="224.20" y="361.00" fill="#0B0C18">1</text>
+    <text x="227.80" y="361.00" fill="#0B0D17">0</text>
+    <text x="231.40" y="361.00" fill="#0B111A">0</text>
+    <text x="235.00" y="361.00" fill="#131822">0</text>
+    <text x="238.60" y="361.00" fill="#1D212B">1</text>
+    <text x="242.20" y="361.00" fill="#1C1F2A">0</text>
+    <text x="245.80" y="361.00" fill="#1C202A">1</text>
+    <text x="249.40" y="361.00" fill="#2A2D37">0</text>
+    <text x="253.00" y="361.00" fill="#2D3038">0</text>
+    <text x="256.60" y="361.00" fill="#2C2F38">0</text>
+    <text x="260.20" y="361.00" fill="#252831">0</text>
+    <text x="263.80" y="361.00" fill="#1D2229">0</text>
+    <text x="267.40" y="361.00" fill="#313335">1</text>
+    <text x="271.00" y="361.00" fill="#5A5251">0</text>
+    <text x="274.60" y="361.00" fill="#6D6059">1</text>
+    <text x="278.20" y="361.00" fill="#8A7A6E">0</text>
+    <text x="281.80" y="361.00" fill="#9B8879">1</text>
+    <text x="285.40" y="361.00" fill="#9C8776">0</text>
+    <text x="289.00" y="361.00" fill="#99826E">1</text>
+    <text x="292.60" y="361.00" fill="#8D7561">0</text>
+    <text x="296.20" y="361.00" fill="#826B57">0</text>
+    <text x="299.80" y="361.00" fill="#806B56">1</text>
+    <text x="303.40" y="361.00" fill="#786651">1</text>
+    <text x="307.00" y="361.00" fill="#6A5B44">1</text>
+    <text x="310.60" y="361.00" fill="#5C4D3B">0</text>
+    <text x="314.20" y="361.00" fill="#493B2D">1</text>
+    <text x="317.80" y="361.00" fill="#3E3325">0</text>
+    <text x="321.40" y="361.00" fill="#382E22">1</text>
+    <text x="325.00" y="361.00" fill="#3A3027">0</text>
+    <text x="328.60" y="361.00" fill="#3E382C">1</text>
+    <text x="332.20" y="361.00" fill="#4F4F3F">1</text>
+    <text x="335.80" y="361.00" fill="#5E6150">0</text>
+    <text x="339.40" y="361.00" fill="#5C6251">1</text>
+    <text x="343.00" y="361.00" fill="#616956">0</text>
+    <text x="346.60" y="361.00" fill="#6C7460">1</text>
+    <text x="350.20" y="361.00" fill="#6D7660">0</text>
+    <text x="353.80" y="361.00" fill="#676E5A">0</text>
+    <text x="357.40" y="361.00" fill="#5C604E">1</text>
+    <text x="361.00" y="361.00" fill="#494F3D">1</text>
+    <text x="364.60" y="361.00" fill="#383E2E">1</text>
+    <text x="368.20" y="361.00" fill="#333827">0</text>
+    <text x="371.80" y="361.00" fill="#3E4431">1</text>
+    <text x="375.40" y="361.00" fill="#494D3C">1</text>
+    <text x="379.00" y="361.00" fill="#46493A">0</text>
+    <text x="382.60" y="361.00" fill="#3D4031">0</text>
+    <text x="386.20" y="361.00" fill="#323525">0</text>
+    <text x="389.80" y="361.00" fill="#303322">0</text>
+    <text x="393.40" y="361.00" fill="#303324">1</text>
+    <text x="397.00" y="361.00" fill="#303323">1</text>
+    <text x="400.60" y="361.00" fill="#34362A">0</text>
+    <text x="404.20" y="361.00" fill="#35382A">0</text>
+    <text x="173.80" y="368.00" fill="#080807">1</text>
+    <text x="177.40" y="368.00" fill="#131318">1</text>
+    <text x="181.00" y="368.00" fill="#14141E">0</text>
+    <text x="184.60" y="368.00" fill="#13151E">1</text>
+    <text x="188.20" y="368.00" fill="#101016">0</text>
+    <text x="191.80" y="368.00" fill="#2B2728">0</text>
+    <text x="195.40" y="368.00" fill="#5C5450">1</text>
+    <text x="199.00" y="368.00" fill="#7C7169">0</text>
+    <text x="202.60" y="368.00" fill="#8B7C71">0</text>
+    <text x="206.20" y="368.00" fill="#8C7C71">0</text>
+    <text x="209.80" y="368.00" fill="#77685E">0</text>
+    <text x="213.40" y="368.00" fill="#4C443F">1</text>
+    <text x="217.00" y="368.00" fill="#272327">1</text>
+    <text x="220.60" y="368.00" fill="#1C1E26">1</text>
+    <text x="224.20" y="368.00" fill="#1E242B">1</text>
+    <text x="227.80" y="368.00" fill="#22272F">0</text>
+    <text x="231.40" y="368.00" fill="#282D36">1</text>
+    <text x="235.00" y="368.00" fill="#1B1F29">1</text>
+    <text x="238.60" y="368.00" fill="#131621">1</text>
+    <text x="242.20" y="368.00" fill="#11151F">1</text>
+    <text x="245.80" y="368.00" fill="#13161F">1</text>
+    <text x="249.40" y="368.00" fill="#101219">1</text>
+    <text x="253.00" y="368.00" fill="#1A1B20">1</text>
+    <text x="256.60" y="368.00" fill="#29272A">0</text>
+    <text x="260.20" y="368.00" fill="#584F4D">1</text>
+    <text x="263.80" y="368.00" fill="#82736B">1</text>
+    <text x="267.40" y="368.00" fill="#8C7768">1</text>
+    <text x="271.00" y="368.00" fill="#7B6352">1</text>
+    <text x="274.60" y="368.00" fill="#A08876">1</text>
+    <text x="278.20" y="368.00" fill="#9F8774">0</text>
+    <text x="281.80" y="368.00" fill="#795D4A">1</text>
+    <text x="285.40" y="368.00" fill="#6E523F">1</text>
+    <text x="289.00" y="368.00" fill="#735A44">0</text>
+    <text x="292.60" y="368.00" fill="#6C553F">1</text>
+    <text x="296.20" y="368.00" fill="#6C5842">1</text>
+    <text x="299.80" y="368.00" fill="#6B5942">1</text>
+    <text x="303.40" y="368.00" fill="#5A4B36">1</text>
+    <text x="307.00" y="368.00" fill="#4F4433">1</text>
+    <text x="310.60" y="368.00" fill="#2E2B27">0</text>
+    <text x="314.20" y="368.00" fill="#141115">1</text>
+    <text x="317.80" y="368.00" fill="#121113">1</text>
+    <text x="321.40" y="368.00" fill="#2A2C28">0</text>
+    <text x="325.00" y="368.00" fill="#565B50">1</text>
+    <text x="328.60" y="368.00" fill="#707969">1</text>
+    <text x="332.20" y="368.00" fill="#777E6C">1</text>
+    <text x="335.80" y="368.00" fill="#747C68">1</text>
+    <text x="339.40" y="368.00" fill="#6F7662">0</text>
+    <text x="343.00" y="368.00" fill="#656957">0</text>
+    <text x="346.60" y="368.00" fill="#515544">1</text>
+    <text x="350.20" y="368.00" fill="#434736">0</text>
+    <text x="353.80" y="368.00" fill="#383A2C">1</text>
+    <text x="357.40" y="368.00" fill="#363829">1</text>
+    <text x="361.00" y="368.00" fill="#414433">1</text>
+    <text x="364.60" y="368.00" fill="#525545">1</text>
+    <text x="368.20" y="368.00" fill="#5D6052">1</text>
+    <text x="371.80" y="368.00" fill="#565A4B">0</text>
+    <text x="375.40" y="368.00" fill="#434637">0</text>
+    <text x="379.00" y="368.00" fill="#323427">0</text>
+    <text x="382.60" y="368.00" fill="#2B2D22">1</text>
+    <text x="386.20" y="368.00" fill="#2D3022">1</text>
+    <text x="389.80" y="368.00" fill="#313224">1</text>
+    <text x="393.40" y="368.00" fill="#2E2F20">0</text>
+    <text x="397.00" y="368.00" fill="#313225">0</text>
+    <text x="400.60" y="368.00" fill="#333428">0</text>
+    <text x="404.20" y="368.00" fill="#282A1E">0</text>
+    <text x="177.40" y="375.00" fill="#16161D">1</text>
+    <text x="181.00" y="375.00" fill="#161620">0</text>
+    <text x="184.60" y="375.00" fill="#151418">0</text>
+    <text x="188.20" y="375.00" fill="#3C342C">0</text>
+    <text x="191.80" y="375.00" fill="#7C6A57">0</text>
+    <text x="195.40" y="375.00" fill="#937C66">1</text>
+    <text x="199.00" y="375.00" fill="#9C856F">1</text>
+    <text x="202.60" y="375.00" fill="#A28B77">0</text>
+    <text x="206.20" y="375.00" fill="#A78D7C">0</text>
+    <text x="209.80" y="375.00" fill="#AE9282">0</text>
+    <text x="213.40" y="375.00" fill="#B29788">1</text>
+    <text x="217.00" y="375.00" fill="#A38F82">0</text>
+    <text x="220.60" y="375.00" fill="#635F5B">1</text>
+    <text x="224.20" y="375.00" fill="#44494F">1</text>
+    <text x="227.80" y="375.00" fill="#535960">0</text>
+    <text x="231.40" y="375.00" fill="#3F4247">1</text>
+    <text x="235.00" y="375.00" fill="#242222">1</text>
+    <text x="238.60" y="375.00" fill="#3A3838">1</text>
+    <text x="242.20" y="375.00" fill="#39363A">0</text>
+    <text x="245.80" y="375.00" fill="#2A272C">0</text>
+    <text x="249.40" y="375.00" fill="#302D2C">0</text>
+    <text x="253.00" y="375.00" fill="#68584F">0</text>
+    <text x="256.60" y="375.00" fill="#81685D">1</text>
+    <text x="260.20" y="375.00" fill="#947B6D">0</text>
+    <text x="263.80" y="375.00" fill="#765B4C">1</text>
+    <text x="267.40" y="375.00" fill="#664D3E">1</text>
+    <text x="271.00" y="375.00" fill="#826959">1</text>
+    <text x="274.60" y="375.00" fill="#846C5C">1</text>
+    <text x="278.20" y="375.00" fill="#5A4435">1</text>
+    <text x="281.80" y="375.00" fill="#684F3D">0</text>
+    <text x="285.40" y="375.00" fill="#6F5840">1</text>
+    <text x="289.00" y="375.00" fill="#59442D">0</text>
+    <text x="292.60" y="375.00" fill="#5F4B37">1</text>
+    <text x="296.20" y="375.00" fill="#5A4936">0</text>
+    <text x="299.80" y="375.00" fill="#4F3F30">1</text>
+    <text x="303.40" y="375.00" fill="#41342D">0</text>
+    <text x="307.00" y="375.00" fill="#201A18">0</text>
+    <text x="310.60" y="375.00" fill="#080B0D">0</text>
+    <text x="314.20" y="375.00" fill="#2D3330">1</text>
+    <text x="317.80" y="375.00" fill="#646B5F">1</text>
+    <text x="321.40" y="375.00" fill="#7E8675">1</text>
+    <text x="325.00" y="375.00" fill="#777F6D">1</text>
+    <text x="328.60" y="375.00" fill="#686E5E">1</text>
+    <text x="332.20" y="375.00" fill="#595B4C">1</text>
+    <text x="335.80" y="375.00" fill="#494B3B">1</text>
+    <text x="339.40" y="375.00" fill="#3A3D2D">1</text>
+    <text x="343.00" y="375.00" fill="#333427">0</text>
+    <text x="346.60" y="375.00" fill="#3B3D2F">0</text>
+    <text x="350.20" y="375.00" fill="#47493B">1</text>
+    <text x="353.80" y="375.00" fill="#515544">1</text>
+    <text x="357.40" y="375.00" fill="#5F6352">0</text>
+    <text x="361.00" y="375.00" fill="#6B6E5F">0</text>
+    <text x="364.60" y="375.00" fill="#606355">0</text>
+    <text x="368.20" y="375.00" fill="#444538">0</text>
+    <text x="371.80" y="375.00" fill="#2C2D20">0</text>
+    <text x="375.40" y="375.00" fill="#26271B">1</text>
+    <text x="379.00" y="375.00" fill="#2A2B1D">1</text>
+    <text x="382.60" y="375.00" fill="#2D2D20">0</text>
+    <text x="386.20" y="375.00" fill="#2F3022">1</text>
+    <text x="389.80" y="375.00" fill="#2D2E20">1</text>
+    <text x="393.40" y="375.00" fill="#2D2D1F">0</text>
+    <text x="397.00" y="375.00" fill="#2D2E22">1</text>
+    <text x="400.60" y="375.00" fill="#27291E">1</text>
+    <text x="404.20" y="375.00" fill="#23261A">1</text>
+    <text x="177.40" y="382.00" fill="#111116">0</text>
+    <text x="181.00" y="382.00" fill="#0E0F13">1</text>
+    <text x="184.60" y="382.00" fill="#27231F">1</text>
+    <text x="188.20" y="382.00" fill="#5A4D3E">1</text>
+    <text x="191.80" y="382.00" fill="#67563E">0</text>
+    <text x="195.40" y="382.00" fill="#69573D">1</text>
+    <text x="199.00" y="382.00" fill="#6D5C42">0</text>
+    <text x="202.60" y="382.00" fill="#77654F">1</text>
+    <text x="206.20" y="382.00" fill="#826C58">0</text>
+    <text x="209.80" y="382.00" fill="#8B725F">0</text>
+    <text x="213.40" y="382.00" fill="#947B66">0</text>
+    <text x="217.00" y="382.00" fill="#867665">1</text>
+    <text x="220.60" y="382.00" fill="#49484A">1</text>
+    <text x="224.20" y="382.00" fill="#464953">1</text>
+    <text x="227.80" y="382.00" fill="#333337">1</text>
+    <text x="231.40" y="382.00" fill="#2D2722">0</text>
+    <text x="235.00" y="382.00" fill="#807160">1</text>
+    <text x="238.60" y="382.00" fill="#A89481">0</text>
+    <text x="242.20" y="382.00" fill="#A28E7E">0</text>
+    <text x="245.80" y="382.00" fill="#9F8D7F">0</text>
+    <text x="249.40" y="382.00" fill="#9F8B7F">1</text>
+    <text x="253.00" y="382.00" fill="#9D8777">0</text>
+    <text x="256.60" y="382.00" fill="#806658">1</text>
+    <text x="260.20" y="382.00" fill="#4E3328">0</text>
+    <text x="263.80" y="382.00" fill="#664F41">0</text>
+    <text x="267.40" y="382.00" fill="#826F5F">0</text>
+    <text x="271.00" y="382.00" fill="#5F4D3E">1</text>
+    <text x="274.60" y="382.00" fill="#38271D">1</text>
+    <text x="278.20" y="382.00" fill="#604F40">1</text>
+    <text x="281.80" y="382.00" fill="#705C49">1</text>
+    <text x="285.40" y="382.00" fill="#443323">0</text>
+    <text x="289.00" y="382.00" fill="#4D3B2D">0</text>
+    <text x="292.60" y="382.00" fill="#675644">0</text>
+    <text x="296.20" y="382.00" fill="#403429">0</text>
+    <text x="299.80" y="382.00" fill="#282621">0</text>
+    <text x="303.40" y="382.00" fill="#262723">1</text>
+    <text x="307.00" y="382.00" fill="#42463E">1</text>
+    <text x="310.60" y="382.00" fill="#616659">0</text>
+    <text x="314.20" y="382.00" fill="#656A58">0</text>
+    <text x="317.80" y="382.00" fill="#575B49">1</text>
+    <text x="321.40" y="382.00" fill="#494C3B">0</text>
+    <text x="325.00" y="382.00" fill="#404233">0</text>
+    <text x="328.60" y="382.00" fill="#38392D">0</text>
+    <text x="332.20" y="382.00" fill="#38392D">0</text>
+    <text x="335.80" y="382.00" fill="#3C3F30">0</text>
+    <text x="339.40" y="382.00" fill="#454938">0</text>
+    <text x="343.00" y="382.00" fill="#545847">0</text>
+    <text x="346.60" y="382.00" fill="#5B604F">0</text>
+    <text x="350.20" y="382.00" fill="#616655">0</text>
+    <text x="353.80" y="382.00" fill="#6A6F5C">0</text>
+    <text x="357.40" y="382.00" fill="#686D5A">1</text>
+    <text x="361.00" y="382.00" fill="#484A3D">1</text>
+    <text x="364.60" y="382.00" fill="#292A1F">0</text>
+    <text x="368.20" y="382.00" fill="#232519">0</text>
+    <text x="371.80" y="382.00" fill="#25271B">1</text>
+    <text x="375.40" y="382.00" fill="#2A2B1F">0</text>
+    <text x="379.00" y="382.00" fill="#2D2E22">1</text>
+    <text x="382.60" y="382.00" fill="#303020">1</text>
+    <text x="386.20" y="382.00" fill="#2D2F1F">0</text>
+    <text x="389.80" y="382.00" fill="#2D2E1F">0</text>
+    <text x="393.40" y="382.00" fill="#252719">0</text>
+    <text x="397.00" y="382.00" fill="#1B1D11">1</text>
+    <text x="400.60" y="382.00" fill="#1D2013">0</text>
+    <text x="404.20" y="382.00" fill="#2B2E22">1</text>
+    <text x="177.40" y="389.00" fill="#050506">0</text>
+    <text x="184.60" y="389.00" fill="#0A0A08">1</text>
+    <text x="188.20" y="389.00" fill="#191813">1</text>
+    <text x="191.80" y="389.00" fill="#2C281F">1</text>
+    <text x="195.40" y="389.00" fill="#40392B">1</text>
+    <text x="199.00" y="389.00" fill="#483E2E">1</text>
+    <text x="202.60" y="389.00" fill="#4D4030">0</text>
+    <text x="206.20" y="389.00" fill="#524433">0</text>
+    <text x="209.80" y="389.00" fill="#554734">1</text>
+    <text x="213.40" y="389.00" fill="#5A4B38">1</text>
+    <text x="217.00" y="389.00" fill="#4F4435">0</text>
+    <text x="220.60" y="389.00" fill="#181616">1</text>
+    <text x="224.20" y="389.00" fill="#09090C">1</text>
+    <text x="227.80" y="389.00" fill="#322A21">1</text>
+    <text x="231.40" y="389.00" fill="#786A55">0</text>
+    <text x="235.00" y="389.00" fill="#93806A">0</text>
+    <text x="238.60" y="389.00" fill="#99816B">1</text>
+    <text x="242.20" y="389.00" fill="#967E6B">0</text>
+    <text x="245.80" y="389.00" fill="#977F70">0</text>
+    <text x="249.40" y="389.00" fill="#977F71">0</text>
+    <text x="253.00" y="389.00" fill="#7A6152">0</text>
+    <text x="256.60" y="389.00" fill="#4A3427">1</text>
+    <text x="260.20" y="389.00" fill="#523C32">1</text>
+    <text x="263.80" y="389.00" fill="#7B6755">1</text>
+    <text x="267.40" y="389.00" fill="#4D3E2D">1</text>
+    <text x="271.00" y="389.00" fill="#2C1C12">0</text>
+    <text x="274.60" y="389.00" fill="#554438">1</text>
+    <text x="278.20" y="389.00" fill="#564938">0</text>
+    <text x="281.80" y="389.00" fill="#2B221A">0</text>
+    <text x="285.40" y="389.00" fill="#2D241E">1</text>
+    <text x="289.00" y="389.00" fill="#6B6255">1</text>
+    <text x="292.60" y="389.00" fill="#5C5647">1</text>
+    <text x="296.20" y="389.00" fill="#4B4C41">1</text>
+    <text x="299.80" y="389.00" fill="#474C41">1</text>
+    <text x="303.40" y="389.00" fill="#484E3F">0</text>
+    <text x="307.00" y="389.00" fill="#424936">1</text>
+    <text x="310.60" y="389.00" fill="#3E422F">0</text>
+    <text x="314.20" y="389.00" fill="#3B3E2B">0</text>
+    <text x="317.80" y="389.00" fill="#3C3E2D">1</text>
+    <text x="321.40" y="389.00" fill="#404230">0</text>
+    <text x="325.00" y="389.00" fill="#424433">1</text>
+    <text x="328.60" y="389.00" fill="#484939">0</text>
+    <text x="332.20" y="389.00" fill="#515442">0</text>
+    <text x="335.80" y="389.00" fill="#595E4A">0</text>
+    <text x="339.40" y="389.00" fill="#606652">0</text>
+    <text x="343.00" y="389.00" fill="#616754">1</text>
+    <text x="346.60" y="389.00" fill="#666A57">1</text>
+    <text x="350.20" y="389.00" fill="#666B59">1</text>
+    <text x="353.80" y="389.00" fill="#545846">1</text>
+    <text x="357.40" y="389.00" fill="#313422">0</text>
+    <text x="361.00" y="389.00" fill="#222518">0</text>
+    <text x="364.60" y="389.00" fill="#26271C">1</text>
+    <text x="368.20" y="389.00" fill="#27291D">1</text>
+    <text x="371.80" y="389.00" fill="#2C2D22">1</text>
+    <text x="375.40" y="389.00" fill="#2D2F23">1</text>
+    <text x="379.00" y="389.00" fill="#2E3022">0</text>
+    <text x="382.60" y="389.00" fill="#2C2E1F">0</text>
+    <text x="386.20" y="389.00" fill="#2E3223">0</text>
+    <text x="389.80" y="389.00" fill="#21241A">1</text>
+    <text x="393.40" y="389.00" fill="#13160E">0</text>
+    <text x="397.00" y="389.00" fill="#161810">0</text>
+    <text x="400.60" y="389.00" fill="#222419">1</text>
+    <text x="404.20" y="389.00" fill="#1B1B12">1</text>
+    <text x="202.60" y="396.00" fill="#1C1914">0</text>
+    <text x="206.20" y="396.00" fill="#27261D">0</text>
+    <text x="209.80" y="396.00" fill="#161410">1</text>
+    <text x="213.40" y="396.00" fill="#161511">0</text>
+    <text x="217.00" y="396.00" fill="#211E19">0</text>
+    <text x="220.60" y="396.00" fill="#272620">0</text>
+    <text x="224.20" y="396.00" fill="#1A1B16">0</text>
+    <text x="227.80" y="396.00" fill="#1B1B16">0</text>
+    <text x="231.40" y="396.00" fill="#393529">1</text>
+    <text x="235.00" y="396.00" fill="#655B49">1</text>
+    <text x="238.60" y="396.00" fill="#8C7B68">0</text>
+    <text x="242.20" y="396.00" fill="#897461">0</text>
+    <text x="245.80" y="396.00" fill="#826E5C">1</text>
+    <text x="249.40" y="396.00" fill="#7E6958">0</text>
+    <text x="253.00" y="396.00" fill="#564433">0</text>
+    <text x="256.60" y="396.00" fill="#5E493E">0</text>
+    <text x="260.20" y="396.00" fill="#695649">0</text>
+    <text x="263.80" y="396.00" fill="#3C2D23">1</text>
+    <text x="267.40" y="396.00" fill="#1C100A">1</text>
+    <text x="271.00" y="396.00" fill="#3E3228">0</text>
+    <text x="274.60" y="396.00" fill="#625949">0</text>
+    <text x="278.20" y="396.00" fill="#4D4A3A">0</text>
+    <text x="281.80" y="396.00" fill="#494C3E">0</text>
+    <text x="285.40" y="396.00" fill="#555A49">1</text>
+    <text x="289.00" y="396.00" fill="#535644">1</text>
+    <text x="292.60" y="396.00" fill="#4F5441">0</text>
+    <text x="296.20" y="396.00" fill="#4F5341">1</text>
+    <text x="299.80" y="396.00" fill="#4F5443">0</text>
+    <text x="303.40" y="396.00" fill="#515645">0</text>
+    <text x="307.00" y="396.00" fill="#4F5644">1</text>
+    <text x="310.60" y="396.00" fill="#4F5442">1</text>
+    <text x="314.20" y="396.00" fill="#505542">0</text>
+    <text x="317.80" y="396.00" fill="#4E533F">0</text>
+    <text x="321.40" y="396.00" fill="#4E523F">1</text>
+    <text x="325.00" y="396.00" fill="#565A48">0</text>
+    <text x="328.60" y="396.00" fill="#616552">1</text>
+    <text x="332.20" y="396.00" fill="#646855">1</text>
+    <text x="335.80" y="396.00" fill="#5F6351">0</text>
+    <text x="339.40" y="396.00" fill="#5D614F">1</text>
+    <text x="343.00" y="396.00" fill="#5D614F">0</text>
+    <text x="346.60" y="396.00" fill="#5A5E4D">1</text>
+    <text x="350.20" y="396.00" fill="#444538">0</text>
+    <text x="353.80" y="396.00" fill="#292C1F">0</text>
+    <text x="357.40" y="396.00" fill="#232619">1</text>
+    <text x="361.00" y="396.00" fill="#282C1F">1</text>
+    <text x="364.60" y="396.00" fill="#2A2D21">1</text>
+    <text x="368.20" y="396.00" fill="#2A2C20">0</text>
+    <text x="371.80" y="396.00" fill="#2F3023">1</text>
+    <text x="375.40" y="396.00" fill="#2F3124">1</text>
+    <text x="379.00" y="396.00" fill="#2B2D21">0</text>
+    <text x="382.60" y="396.00" fill="#26271C">0</text>
+    <text x="386.20" y="396.00" fill="#1C1D15">1</text>
+    <text x="389.80" y="396.00" fill="#131510">1</text>
+    <text x="393.40" y="396.00" fill="#181A14">0</text>
+    <text x="397.00" y="396.00" fill="#21221A">1</text>
+    <text x="400.60" y="396.00" fill="#1D1E16">1</text>
+    <text x="202.60" y="403.00" fill="#060706">1</text>
+    <text x="206.20" y="403.00" fill="#0F140F">1</text>
+    <text x="209.80" y="403.00" fill="#272C26">0</text>
+    <text x="213.40" y="403.00" fill="#2D302A">1</text>
+    <text x="217.00" y="403.00" fill="#44483E">0</text>
+    <text x="220.60" y="403.00" fill="#5D6354">0</text>
+    <text x="224.20" y="403.00" fill="#606655">0</text>
+    <text x="227.80" y="403.00" fill="#616858">0</text>
+    <text x="231.40" y="403.00" fill="#68705F">0</text>
+    <text x="235.00" y="403.00" fill="#626656">0</text>
+    <text x="238.60" y="403.00" fill="#727566">0</text>
+    <text x="242.20" y="403.00" fill="#737464">1</text>
+    <text x="245.80" y="403.00" fill="#6E715E">0</text>
+    <text x="249.40" y="403.00" fill="#6A6A58">0</text>
+    <text x="253.00" y="403.00" fill="#5B5B4B">1</text>
+    <text x="256.60" y="403.00" fill="#6B665A">1</text>
+    <text x="260.20" y="403.00" fill="#4D483D">0</text>
+    <text x="263.80" y="403.00" fill="#2D2923">0</text>
+    <text x="267.40" y="403.00" fill="#414139">1</text>
+    <text x="271.00" y="403.00" fill="#656658">0</text>
+    <text x="274.60" y="403.00" fill="#6E7261">0</text>
+    <text x="278.20" y="403.00" fill="#6F7362">0</text>
+    <text x="281.80" y="403.00" fill="#6B715F">1</text>
+    <text x="285.40" y="403.00" fill="#636857">0</text>
+    <text x="289.00" y="403.00" fill="#616455">0</text>
+    <text x="292.60" y="403.00" fill="#616453">0</text>
+    <text x="296.20" y="403.00" fill="#616452">1</text>
+    <text x="299.80" y="403.00" fill="#5F6451">1</text>
+    <text x="303.40" y="403.00" fill="#595F4B">1</text>
+    <text x="307.00" y="403.00" fill="#505543">0</text>
+    <text x="310.60" y="403.00" fill="#4A4D3D">1</text>
+    <text x="314.20" y="403.00" fill="#4F503F">0</text>
+    <text x="317.80" y="403.00" fill="#585A49">1</text>
+    <text x="321.40" y="403.00" fill="#666A58">0</text>
+    <text x="325.00" y="403.00" fill="#6B6F5C">1</text>
+    <text x="328.60" y="403.00" fill="#626655">0</text>
+    <text x="332.20" y="403.00" fill="#555849">1</text>
+    <text x="335.80" y="403.00" fill="#525549">1</text>
+    <text x="339.40" y="403.00" fill="#55574B">0</text>
+    <text x="343.00" y="403.00" fill="#4B4E3F">1</text>
+    <text x="346.60" y="403.00" fill="#38392A">0</text>
+    <text x="350.20" y="403.00" fill="#27291C">0</text>
+    <text x="353.80" y="403.00" fill="#27281D">0</text>
+    <text x="357.40" y="403.00" fill="#2A2B20">0</text>
+    <text x="361.00" y="403.00" fill="#292B1F">0</text>
+    <text x="364.60" y="403.00" fill="#2A2C20">1</text>
+    <text x="368.20" y="403.00" fill="#303225">0</text>
+    <text x="371.80" y="403.00" fill="#303124">0</text>
+    <text x="375.40" y="403.00" fill="#2C2D1F">1</text>
+    <text x="379.00" y="403.00" fill="#232619">1</text>
+    <text x="382.60" y="403.00" fill="#161811">1</text>
+    <text x="386.20" y="403.00" fill="#191B13">1</text>
+    <text x="389.80" y="403.00" fill="#202118">1</text>
+    <text x="393.40" y="403.00" fill="#1F2116">0</text>
+    <text x="397.00" y="403.00" fill="#0B0B07">0</text>
+    <text x="199.00" y="410.00" fill="#050605">0</text>
+    <text x="202.60" y="410.00" fill="#020506">1</text>
+    <text x="206.20" y="410.00" fill="#333733">1</text>
+    <text x="209.80" y="410.00" fill="#44493E">0</text>
+    <text x="213.40" y="410.00" fill="#393C30">1</text>
+    <text x="217.00" y="410.00" fill="#62675A">0</text>
+    <text x="220.60" y="410.00" fill="#646B5A">0</text>
+    <text x="224.20" y="410.00" fill="#676F5E">1</text>
+    <text x="227.80" y="410.00" fill="#707665">0</text>
+    <text x="231.40" y="410.00" fill="#727767">1</text>
+    <text x="235.00" y="410.00" fill="#525549">0</text>
+    <text x="238.60" y="410.00" fill="#757B6C">0</text>
+    <text x="242.20" y="410.00" fill="#7B8372">0</text>
+    <text x="245.80" y="410.00" fill="#798370">10</text>
+    <text x="253.00" y="410.00" fill="#7B8370">1</text>
+    <text x="256.60" y="410.00" fill="#7C8271">1</text>
+    <text x="260.20" y="410.00" fill="#777C6B">1</text>
+    <text x="263.80" y="410.00" fill="#737866">1</text>
+    <text x="267.40" y="410.00" fill="#777C6B">1</text>
+    <text x="271.00" y="410.00" fill="#6E7260">1</text>
+    <text x="274.60" y="410.00" fill="#676C5A">0</text>
+    <text x="278.20" y="410.00" fill="#626655">1</text>
+    <text x="281.80" y="410.00" fill="#5E6151">1</text>
+    <text x="285.40" y="410.00" fill="#585C4D">1</text>
+    <text x="289.00" y="410.00" fill="#535546">0</text>
+    <text x="292.60" y="410.00" fill="#4C4F3F">1</text>
+    <text x="296.20" y="410.00" fill="#4A4D3E">0</text>
+    <text x="299.80" y="410.00" fill="#45493A">1</text>
+    <text x="303.40" y="410.00" fill="#454738">0</text>
+    <text x="307.00" y="410.00" fill="#505544">1</text>
+    <text x="310.60" y="410.00" fill="#606553">1</text>
+    <text x="314.20" y="410.00" fill="#6A6C5C">1</text>
+    <text x="317.80" y="410.00" fill="#696B5A">1</text>
+    <text x="321.40" y="410.00" fill="#616351">1</text>
+    <text x="325.00" y="410.00" fill="#515543">1</text>
+    <text x="328.60" y="410.00" fill="#424434">1</text>
+    <text x="332.20" y="410.00" fill="#414235">1</text>
+    <text x="335.80" y="410.00" fill="#47493C">0</text>
+    <text x="339.40" y="410.00" fill="#3F4033">0</text>
+    <text x="343.00" y="410.00" fill="#303125">1</text>
+    <text x="346.60" y="410.00" fill="#27291D">0</text>
+    <text x="350.20" y="410.00" fill="#26271C">0</text>
+    <text x="353.80" y="410.00" fill="#2B2B20">1</text>
+    <text x="357.40" y="410.00" fill="#28281D">1</text>
+    <text x="361.00" y="410.00" fill="#2D2D22">1</text>
+    <text x="364.60" y="410.00" fill="#333327">0</text>
+    <text x="368.20" y="410.00" fill="#2F3024">0</text>
+    <text x="371.80" y="410.00" fill="#24251A">0</text>
+    <text x="375.40" y="410.00" fill="#1B1D12">1</text>
+    <text x="379.00" y="410.00" fill="#1C1D11">0</text>
+    <text x="382.60" y="410.00" fill="#222418">0</text>
+    <text x="386.20" y="410.00" fill="#2D2F23">0</text>
+    <text x="389.80" y="410.00" fill="#2A2A1D">0</text>
+    <text x="393.40" y="410.00" fill="#12110C">1</text>
+    <text x="202.60" y="417.00" fill="#08080B">0</text>
+    <text x="206.20" y="417.00" fill="#111113">0</text>
+    <text x="209.80" y="417.00" fill="#393B33">1</text>
+    <text x="213.40" y="417.00" fill="#5D6054">0</text>
+    <text x="217.00" y="417.00" fill="#5F6355">1</text>
+    <text x="220.60" y="417.00" fill="#666A5B">0</text>
+    <text x="224.20" y="417.00" fill="#717766">1</text>
+    <text x="227.80" y="417.00" fill="#6A7061">0</text>
+    <text x="231.40" y="417.00" fill="#3D4038">1</text>
+    <text x="235.00" y="417.00" fill="#606658">1</text>
+    <text x="238.60" y="417.00" fill="#717966">1</text>
+    <text x="242.20" y="417.00" fill="#767C68">0</text>
+    <text x="245.80" y="417.00" fill="#80836F">0</text>
+    <text x="249.40" y="417.00" fill="#848271">0</text>
+    <text x="253.00" y="417.00" fill="#7E7B6A">0</text>
+    <text x="256.60" y="417.00" fill="#7C7B6A">0</text>
+    <text x="260.20" y="417.00" fill="#737564">0</text>
+    <text x="263.80" y="417.00" fill="#6C715E">0</text>
+    <text x="267.40" y="417.00" fill="#666B58">0</text>
+    <text x="271.00" y="417.00" fill="#606551">1</text>
+    <text x="274.60" y="417.00" fill="#5E624F">1</text>
+    <text x="278.20" y="417.00" fill="#545646">1</text>
+    <text x="281.80" y="417.00" fill="#555747">0</text>
+    <text x="285.40" y="417.00" fill="#4F5341">0</text>
+    <text x="289.00" y="417.00" fill="#4E513F">1</text>
+    <text x="292.60" y="417.00" fill="#565A48">1</text>
+    <text x="296.20" y="417.00" fill="#5A604E">0</text>
+    <text x="299.80" y="417.00" fill="#606654">0</text>
+    <text x="303.40" y="417.00" fill="#646856">1</text>
+    <text x="307.00" y="417.00" fill="#656956">0</text>
+    <text x="310.60" y="417.00" fill="#606250">0</text>
+    <text x="314.20" y="417.00" fill="#5F6050">0</text>
+    <text x="317.80" y="417.00" fill="#5D5F4F">1</text>
+    <text x="321.40" y="417.00" fill="#505340">1</text>
+    <text x="325.00" y="417.00" fill="#40422F">1</text>
+    <text x="328.60" y="417.00" fill="#3A3C29">0</text>
+    <text x="332.20" y="417.00" fill="#3A3B2B">0</text>
+    <text x="335.80" y="417.00" fill="#353628">0</text>
+    <text x="339.40" y="417.00" fill="#303124">0</text>
+    <text x="343.00" y="417.00" fill="#2C2C20">0</text>
+    <text x="346.60" y="417.00" fill="#272A1D">0</text>
+    <text x="350.20" y="417.00" fill="#282B1F">1</text>
+    <text x="353.80" y="417.00" fill="#2D2E22">1</text>
+    <text x="357.40" y="417.00" fill="#2F3025">1</text>
+    <text x="361.00" y="417.00" fill="#2D2D23">1</text>
+    <text x="364.60" y="417.00" fill="#26271C">0</text>
+    <text x="368.20" y="417.00" fill="#1D1D15">0</text>
+    <text x="371.80" y="417.00" fill="#1B1C13">1</text>
+    <text x="375.40" y="417.00" fill="#202218">1</text>
+    <text x="379.00" y="417.00" fill="#1B1C14">1</text>
+    <text x="382.60" y="417.00" fill="#212219">0</text>
+    <text x="386.20" y="417.00" fill="#24231B">1</text>
+    <text x="389.80" y="417.00" fill="#0B0B06">1</text>
+    <text x="202.60" y="424.00" fill="#050508">1</text>
+    <text x="206.20" y="424.00" fill="#0F1116">1</text>
+    <text x="209.80" y="424.00" fill="#454944">1</text>
+    <text x="213.40" y="424.00" fill="#44483E">1</text>
+    <text x="217.00" y="424.00" fill="#606658">1</text>
+    <text x="220.60" y="424.00" fill="#7C8274">0</text>
+    <text x="224.20" y="424.00" fill="#696D61">0</text>
+    <text x="227.80" y="424.00" fill="#4B4A41">1</text>
+    <text x="231.40" y="424.00" fill="#797568">0</text>
+    <text x="235.00" y="424.00" fill="#9B9380">1</text>
+    <text x="238.60" y="424.00" fill="#998E7B">1</text>
+    <text x="242.20" y="424.00" fill="#9C927B">0</text>
+    <text x="245.80" y="424.00" fill="#A2957D">0</text>
+    <text x="249.40" y="424.00" fill="#A99882">1</text>
+    <text x="253.00" y="424.00" fill="#AA9782">1</text>
+    <text x="256.60" y="424.00" fill="#9E8D78">0</text>
+    <text x="260.20" y="424.00" fill="#897C68">1</text>
+    <text x="263.80" y="424.00" fill="#6A644F">1</text>
+    <text x="267.40" y="424.00" fill="#535340">0</text>
+    <text x="271.00" y="424.00" fill="#555946">0</text>
+    <text x="274.60" y="424.00" fill="#525644">0</text>
+    <text x="278.20" y="424.00" fill="#595B4B">1</text>
+    <text x="281.80" y="424.00" fill="#575A48">0</text>
+    <text x="285.40" y="424.00" fill="#5A5C4A">0</text>
+    <text x="289.00" y="424.00" fill="#646655">1</text>
+    <text x="292.60" y="424.00" fill="#636553">1</text>
+    <text x="296.20" y="424.00" fill="#5D604E">1</text>
+    <text x="299.80" y="424.00" fill="#606251">1</text>
+    <text x="303.40" y="424.00" fill="#616453">0</text>
+    <text x="307.00" y="424.00" fill="#5D5F4E">1</text>
+    <text x="310.60" y="424.00" fill="#565848">1</text>
+    <text x="314.20" y="424.00" fill="#4F5244">1</text>
+    <text x="317.80" y="424.00" fill="#444639">0</text>
+    <text x="321.40" y="424.00" fill="#3B3E30">1</text>
+    <text x="325.00" y="424.00" fill="#383A2C">1</text>
+    <text x="328.60" y="424.00" fill="#333524">0</text>
+    <text x="332.20" y="424.00" fill="#2F3222">0</text>
+    <text x="335.80" y="424.00" fill="#2D2F22">0</text>
+    <text x="339.40" y="424.00" fill="#25271B">1</text>
+    <text x="343.00" y="424.00" fill="#25271C">0</text>
+    <text x="346.60" y="424.00" fill="#24281E">1</text>
+    <text x="350.20" y="424.00" fill="#22241C">0</text>
+    <text x="353.80" y="424.00" fill="#1D1F18">1</text>
+    <text x="357.40" y="424.00" fill="#1B1D16">0</text>
+    <text x="361.00" y="424.00" fill="#1A1C16">1</text>
+    <text x="364.60" y="424.00" fill="#1C1E16">1</text>
+    <text x="368.20" y="424.00" fill="#23251E">1</text>
+    <text x="371.80" y="424.00" fill="#23251D">0</text>
+    <text x="375.40" y="424.00" fill="#181911">0</text>
+    <text x="379.00" y="424.00" fill="#0B0B07">1</text>
+    <text x="382.60" y="424.00" fill="#090A07">0</text>
+    <text x="199.00" y="431.00" fill="#0B0B0B">1</text>
+    <text x="202.60" y="431.00" fill="#2F2F2F">0</text>
+    <text x="206.20" y="431.00" fill="#5D6060">1</text>
+    <text x="209.80" y="431.00" fill="#999D9A">0</text>
+    <text x="213.40" y="431.00" fill="#ACAEAA">0</text>
+    <text x="217.00" y="431.00" fill="#B3B4B0">1</text>
+    <text x="220.60" y="431.00" fill="#B0B2AE">1</text>
+    <text x="224.20" y="431.00" fill="#A8A7A2">1</text>
+    <text x="227.80" y="431.00" fill="#AFAA9E">0</text>
+    <text x="231.40" y="431.00" fill="#AFA492">0</text>
+    <text x="235.00" y="431.00" fill="#AFA18E">1</text>
+    <text x="238.60" y="431.00" fill="#A19380">1</text>
+    <text x="242.20" y="431.00" fill="#8D7E6B">0</text>
+    <text x="245.80" y="431.00" fill="#7F705B">0</text>
+    <text x="249.40" y="431.00" fill="#766753">0</text>
+    <text x="253.00" y="431.00" fill="#6B5B47">1</text>
+    <text x="256.60" y="431.00" fill="#665740">0</text>
+    <text x="260.20" y="431.00" fill="#61533C">0</text>
+    <text x="263.80" y="431.00" fill="#5A4C35">0</text>
+    <text x="267.40" y="431.00" fill="#4D412D">1</text>
+    <text x="271.00" y="431.00" fill="#3E3727">0</text>
+    <text x="274.60" y="431.00" fill="#454332">0</text>
+    <text x="278.20" y="431.00" fill="#555646">0</text>
+    <text x="281.80" y="431.00" fill="#666A58">0</text>
+    <text x="285.40" y="431.00" fill="#6A6E5A">0</text>
+    <text x="289.00" y="431.00" fill="#626652">1</text>
+    <text x="292.60" y="431.00" fill="#575A48">1</text>
+    <text x="296.20" y="431.00" fill="#515444">1</text>
+    <text x="299.80" y="431.00" fill="#535444">0</text>
+    <text x="303.40" y="431.00" fill="#555647">0</text>
+    <text x="307.00" y="431.00" fill="#505342">0</text>
+    <text x="310.60" y="431.00" fill="#454837">1</text>
+    <text x="314.20" y="431.00" fill="#393D2F">0</text>
+    <text x="317.80" y="431.00" fill="#33372B">0</text>
+    <text x="321.40" y="431.00" fill="#313227">0</text>
+    <text x="325.00" y="431.00" fill="#2D2F24">1</text>
+    <text x="328.60" y="431.00" fill="#303226">0</text>
+    <text x="332.20" y="431.00" fill="#292D21">1</text>
+    <text x="335.80" y="431.00" fill="#14190E">1</text>
+    <text x="339.40" y="431.00" fill="#0E130B">0</text>
+    <text x="343.00" y="431.00" fill="#161A15">0</text>
+    <text x="346.60" y="431.00" fill="#1A1E18">1</text>
+    <text x="350.20" y="431.00" fill="#181B14">0</text>
+    <text x="353.80" y="431.00" fill="#1A1C14">1</text>
+    <text x="357.40" y="431.00" fill="#1E2117">1</text>
+    <text x="361.00" y="431.00" fill="#25291D">1</text>
+    <text x="364.60" y="431.00" fill="#292D22">0</text>
+    <text x="368.20" y="431.00" fill="#1F211A">1</text>
+    <text x="371.80" y="431.00" fill="#10110C">1</text>
+    <text x="375.40" y="431.00" fill="#080804">0</text>
+    <text x="191.80" y="438.00" fill="#191918">1</text>
+    <text x="195.40" y="438.00" fill="#40413D">0</text>
+    <text x="199.00" y="438.00" fill="#8F918C">1</text>
+    <text x="202.60" y="438.00" fill="#B8B9B4">1</text>
+    <text x="206.20" y="438.00" fill="#C2C2C0">1</text>
+    <text x="209.80" y="438.00" fill="#C1C2C0">0</text>
+    <text x="213.40" y="438.00" fill="#BFBFBD">0</text>
+    <text x="217.00" y="438.00" fill="#C5C5C3">0</text>
+    <text x="220.60" y="438.00" fill="#BEBEBB">0</text>
+    <text x="224.20" y="438.00" fill="#BABAB4">1</text>
+    <text x="227.80" y="438.00" fill="#ACAA9F">0</text>
+    <text x="231.40" y="438.00" fill="#999687">0</text>
+    <text x="235.00" y="438.00" fill="#959182">1</text>
+    <text x="238.60" y="438.00" fill="#888272">0</text>
+    <text x="242.20" y="438.00" fill="#77705F">0</text>
+    <text x="245.80" y="438.00" fill="#534B3C">1</text>
+    <text x="249.40" y="438.00" fill="#564F3F">1</text>
+    <text x="253.00" y="438.00" fill="#4F4936">0</text>
+    <text x="256.60" y="438.00" fill="#4C462E">0</text>
+    <text x="260.20" y="438.00" fill="#48402A">1</text>
+    <text x="263.80" y="438.00" fill="#3F3625">1</text>
+    <text x="267.40" y="438.00" fill="#30271C">1</text>
+    <text x="271.00" y="438.00" fill="#251F16">1</text>
+    <text x="274.60" y="438.00" fill="#17140D">0</text>
+    <text x="278.20" y="438.00" fill="#0E0F0B">1</text>
+    <text x="281.80" y="438.00" fill="#181B16">1</text>
+    <text x="285.40" y="438.00" fill="#2F332A">0</text>
+    <text x="289.00" y="438.00" fill="#43453A">0</text>
+    <text x="292.60" y="438.00" fill="#4C4F40">0</text>
+    <text x="296.20" y="438.00" fill="#515544">0</text>
+    <text x="299.80" y="438.00" fill="#4D503E">1</text>
+    <text x="303.40" y="438.00" fill="#444637">0</text>
+    <text x="307.00" y="438.00" fill="#3F4334">1</text>
+    <text x="310.60" y="438.00" fill="#333728">0</text>
+    <text x="314.20" y="438.00" fill="#2F3326">0</text>
+    <text x="317.80" y="438.00" fill="#2C2F22">1</text>
+    <text x="321.40" y="438.00" fill="#2B2E21">0</text>
+    <text x="325.00" y="438.00" fill="#2F3325">1</text>
+    <text x="328.60" y="438.00" fill="#24271C">0</text>
+    <text x="332.20" y="438.00" fill="#11140E">1</text>
+    <text x="335.80" y="438.00" fill="#0F130D">1</text>
+    <text x="339.40" y="438.00" fill="#10110D">0</text>
+    <text x="343.00" y="438.00" fill="#11120E">0</text>
+    <text x="346.60" y="438.00" fill="#22231E">1</text>
+    <text x="350.20" y="438.00" fill="#25271D">1</text>
+    <text x="353.80" y="438.00" fill="#24271B">1</text>
+    <text x="357.40" y="438.00" fill="#292D20">1</text>
+    <text x="361.00" y="438.00" fill="#27281C">0</text>
+    <text x="364.60" y="438.00" fill="#14140E">1</text>
+    <text x="368.20" y="438.00" fill="#060604">1</text>
+    <text x="181.00" y="445.00" fill="#141412">0</text>
+    <text x="184.60" y="445.00" fill="#52504C">1</text>
+    <text x="188.20" y="445.00" fill="#8A8882">1</text>
+    <text x="191.80" y="445.00" fill="#A3A29D">1</text>
+    <text x="195.40" y="445.00" fill="#AEAFA8">1</text>
+    <text x="199.00" y="445.00" fill="#B8B9B4">1</text>
+    <text x="202.60" y="445.00" fill="#BBBBB7">1</text>
+    <text x="206.20" y="445.00" fill="#BCBDBA">1</text>
+    <text x="209.80" y="445.00" fill="#BBBBB8">1</text>
+    <text x="213.40" y="445.00" fill="#B5B5B2">0</text>
+    <text x="217.00" y="445.00" fill="#B5B4AF">0</text>
+    <text x="220.60" y="445.00" fill="#B5B4AC">0</text>
+    <text x="224.20" y="445.00" fill="#A9A89C">1</text>
+    <text x="227.80" y="445.00" fill="#9E9D8D">1</text>
+    <text x="231.40" y="445.00" fill="#8E8A7A">1</text>
+    <text x="235.00" y="445.00" fill="#888373">1</text>
+    <text x="238.60" y="445.00" fill="#928C7C">0</text>
+    <text x="242.20" y="445.00" fill="#898371">0</text>
+    <text x="245.80" y="445.00" fill="#595444">1</text>
+    <text x="249.40" y="445.00" fill="#4B4638">0</text>
+    <text x="253.00" y="445.00" fill="#3D392D">0</text>
+    <text x="256.60" y="445.00" fill="#232218">0</text>
+    <text x="260.20" y="445.00" fill="#181710">1</text>
+    <text x="263.80" y="445.00" fill="#161610">0</text>
+    <text x="267.40" y="445.00" fill="#191B15">1</text>
+    <text x="271.00" y="445.00" fill="#1C1D17">0</text>
+    <text x="274.60" y="445.00" fill="#1F231C">0</text>
+    <text x="278.20" y="445.00" fill="#21271F">0</text>
+    <text x="281.80" y="445.00" fill="#1A1D18">1</text>
+    <text x="285.40" y="445.00" fill="#0D0F0B">1</text>
+    <text x="289.00" y="445.00" fill="#0A0B09">0</text>
+    <text x="292.60" y="445.00" fill="#22231E">0</text>
+    <text x="296.20" y="445.00" fill="#3B3E33">0</text>
+    <text x="299.80" y="445.00" fill="#404433">1</text>
+    <text x="303.40" y="445.00" fill="#3B3E2D">0</text>
+    <text x="307.00" y="445.00" fill="#313425">0</text>
+    <text x="310.60" y="445.00" fill="#282D1D">1</text>
+    <text x="314.20" y="445.00" fill="#2B2E22">0</text>
+    <text x="317.80" y="445.00" fill="#2D3126">10</text>
+    <text x="325.00" y="445.00" fill="#1C1F14">0</text>
+    <text x="328.60" y="445.00" fill="#10120B">0</text>
+    <text x="332.20" y="445.00" fill="#131611">1</text>
+    <text x="335.80" y="445.00" fill="#141612">1</text>
+    <text x="339.40" y="445.00" fill="#161814">1</text>
+    <text x="343.00" y="445.00" fill="#1B1C17">0</text>
+    <text x="346.60" y="445.00" fill="#282923">1</text>
+    <text x="350.20" y="445.00" fill="#2D2F23">0</text>
+    <text x="353.80" y="445.00" fill="#2B2D21">1</text>
+    <text x="357.40" y="445.00" fill="#1D1D15">0</text>
+    <text x="361.00" y="445.00" fill="#060504">0</text>
+    <text x="181.00" y="452.00" fill="#6D6C63">1</text>
+    <text x="184.60" y="452.00" fill="#A8A59B">0</text>
+    <text x="188.20" y="452.00" fill="#A4A39F">0</text>
+    <text x="191.80" y="452.00" fill="#B1AFAD">0</text>
+    <text x="195.40" y="452.00" fill="#B8B8B5">0</text>
+    <text x="199.00" y="452.00" fill="#BBBBB7">0</text>
+    <text x="202.60" y="452.00" fill="#BBBBB6">1</text>
+    <text x="206.20" y="452.00" fill="#B7B7B3">0</text>
+    <text x="209.80" y="452.00" fill="#AFAEAA">0</text>
+    <text x="213.40" y="452.00" fill="#AAAAA4">1</text>
+    <text x="217.00" y="452.00" fill="#A3A298">0</text>
+    <text x="220.60" y="452.00" fill="#8F8D7E">1</text>
+    <text x="224.20" y="452.00" fill="#8C8977">0</text>
+    <text x="227.80" y="452.00" fill="#888372">0</text>
+    <text x="231.40" y="452.00" fill="#807769">0</text>
+    <text x="235.00" y="452.00" fill="#746B5D">0</text>
+    <text x="238.60" y="452.00" fill="#625B4B">1</text>
+    <text x="242.20" y="452.00" fill="#888474">1</text>
+    <text x="245.80" y="452.00" fill="#454437">1</text>
+    <text x="249.40" y="452.00" fill="#14160F">0</text>
+    <text x="253.00" y="452.00" fill="#070A06">0</text>
+    <text x="256.60" y="452.00" fill="#090B07">0</text>
+    <text x="260.20" y="452.00" fill="#1A1912">0</text>
+    <text x="263.80" y="452.00" fill="#3A3B30">0</text>
+    <text x="267.40" y="452.00" fill="#4E4F41">1</text>
+    <text x="271.00" y="452.00" fill="#4F5242">1</text>
+    <text x="274.60" y="452.00" fill="#494E40">1</text>
+    <text x="278.20" y="452.00" fill="#3F463A">0</text>
+    <text x="281.80" y="452.00" fill="#31372E">0</text>
+    <text x="285.40" y="452.00" fill="#1C211C">0</text>
+    <text x="289.00" y="452.00" fill="#151713">0</text>
+    <text x="292.60" y="452.00" fill="#0E100B">1</text>
+    <text x="296.20" y="452.00" fill="#060905">0</text>
+    <text x="299.80" y="452.00" fill="#131611">1</text>
+    <text x="303.40" y="452.00" fill="#292B21">0</text>
+    <text x="307.00" y="452.00" fill="#2E3023">1</text>
+    <text x="310.60" y="452.00" fill="#2A2D1D">0</text>
+    <text x="314.20" y="452.00" fill="#2F3223">0</text>
+    <text x="317.80" y="452.00" fill="#2A2D23">0</text>
+    <text x="321.40" y="452.00" fill="#10120E">0</text>
+    <text x="325.00" y="452.00" fill="#090B08">0</text>
+    <text x="328.60" y="452.00" fill="#0E100C">1</text>
+    <text x="332.20" y="452.00" fill="#111211">1</text>
+    <text x="335.80" y="452.00" fill="#151614">0</text>
+    <text x="339.40" y="452.00" fill="#191B18">1</text>
+    <text x="343.00" y="452.00" fill="#1C1D1B">0</text>
+    <text x="346.60" y="452.00" fill="#1D1E1B">1</text>
+    <text x="350.20" y="452.00" fill="#22231E">1</text>
+    <text x="353.80" y="452.00" fill="#11110D">0</text>
+    <text x="357.40" y="452.00" fill="#090905">1</text>
+    <text x="181.00" y="459.00" fill="#63625A">0</text>
+    <text x="184.60" y="459.00" fill="#A9A69D">0</text>
+    <text x="188.20" y="459.00" fill="#B7B7B3">0</text>
+    <text x="191.80" y="459.00" fill="#BCBDB9">1</text>
+    <text x="195.40" y="459.00" fill="#B8B9B5">0</text>
+    <text x="199.00" y="459.00" fill="#B3B4B0">0</text>
+    <text x="202.60" y="459.00" fill="#B0B0AB">1</text>
+    <text x="206.20" y="459.00" fill="#AAA9A2">1</text>
+    <text x="209.80" y="459.00" fill="#ACABA2">0</text>
+    <text x="213.40" y="459.00" fill="#A3A094">0</text>
+    <text x="217.00" y="459.00" fill="#837F71">1</text>
+    <text x="220.60" y="459.00" fill="#797261">0</text>
+    <text x="224.20" y="459.00" fill="#7C7462">1</text>
+    <text x="227.80" y="459.00" fill="#807767">0</text>
+    <text x="231.40" y="459.00" fill="#7C7163">1</text>
+    <text x="235.00" y="459.00" fill="#6D6254">1</text>
+    <text x="238.60" y="459.00" fill="#665F4F">1</text>
+    <text x="242.20" y="459.00" fill="#858074">0</text>
+    <text x="245.80" y="459.00" fill="#161612">0</text>
+    <text x="253.00" y="459.00" fill="#0B0C0B">1</text>
+    <text x="256.60" y="459.00" fill="#12120C">0</text>
+    <text x="260.20" y="459.00" fill="#333428">1</text>
+    <text x="263.80" y="459.00" fill="#4C4F41">0</text>
+    <text x="267.40" y="459.00" fill="#505244">0</text>
+    <text x="271.00" y="459.00" fill="#505241">1</text>
+    <text x="274.60" y="459.00" fill="#494C3D">0</text>
+    <text x="278.20" y="459.00" fill="#444538">1</text>
+    <text x="281.80" y="459.00" fill="#383A2E">1</text>
+    <text x="285.40" y="459.00" fill="#252720">0</text>
+    <text x="289.00" y="459.00" fill="#151712">1</text>
+    <text x="292.60" y="459.00" fill="#141611">0</text>
+    <text x="296.20" y="459.00" fill="#141611">0</text>
+    <text x="299.80" y="459.00" fill="#141612">0</text>
+    <text x="303.40" y="459.00" fill="#151712">0</text>
+    <text x="307.00" y="459.00" fill="#20241B">1</text>
+    <text x="310.60" y="459.00" fill="#2E3227">1</text>
+    <text x="314.20" y="459.00" fill="#21231C">1</text>
+    <text x="317.80" y="459.00" fill="#080907">1</text>
+    <text x="321.40" y="459.00" fill="#030406">1</text>
+    <text x="325.00" y="459.00" fill="#040508">1</text>
+    <text x="328.60" y="459.00" fill="#050609">1</text>
+    <text x="332.20" y="459.00" fill="#050608">1</text>
+    <text x="335.80" y="459.00" fill="#060709">0</text>
+    <text x="339.40" y="459.00" fill="#06070A">1</text>
+    <text x="343.00" y="459.00" fill="#040507">0</text>
+    <text x="350.20" y="459.00" fill="#08080B">1</text>
+    <text x="353.80" y="459.00" fill="#060608">1</text>
+    <text x="357.40" y="459.00" fill="#080905">1</text>
+    <text x="173.80" y="466.00" fill="#1C1C19">0</text>
+    <text x="177.40" y="466.00" fill="#89877C">1</text>
+    <text x="181.00" y="466.00" fill="#B0AFA4">1</text>
+    <text x="184.60" y="466.00" fill="#AEACA2">1</text>
+    <text x="188.20" y="466.00" fill="#B1B0A8">1</text>
+    <text x="191.80" y="466.00" fill="#B2B3AC">0</text>
+    <text x="195.40" y="466.00" fill="#AFB0A9">1</text>
+    <text x="199.00" y="466.00" fill="#A4A39C">0</text>
+    <text x="202.60" y="466.00" fill="#9A958E">0</text>
+    <text x="206.20" y="466.00" fill="#979388">0</text>
+    <text x="209.80" y="466.00" fill="#938F82">1</text>
+    <text x="213.40" y="466.00" fill="#878171">0</text>
+    <text x="217.00" y="466.00" fill="#7C7663">0</text>
+    <text x="220.60" y="466.00" fill="#7E7560">0</text>
+    <text x="224.20" y="466.00" fill="#766B5A">0</text>
+    <text x="227.80" y="466.00" fill="#7A6F61">1</text>
+    <text x="231.40" y="466.00" fill="#796F61">0</text>
+    <text x="235.00" y="466.00" fill="#645A4A">0</text>
+    <text x="238.60" y="466.00" fill="#797260">1</text>
+    <text x="242.20" y="466.00" fill="#69675A">0</text>
+    <text x="245.80" y="466.00" fill="#0C0D0B">1</text>
+    <text x="249.40" y="466.00" fill="#080B09">0</text>
+    <text x="253.00" y="466.00" fill="#0C0E0B">0</text>
+    <text x="256.60" y="466.00" fill="#1A1C14">0</text>
+    <text x="260.20" y="466.00" fill="#2A2D1D">1</text>
+    <text x="263.80" y="466.00" fill="#313325">1</text>
+    <text x="267.40" y="466.00" fill="#444638">1</text>
+    <text x="271.00" y="466.00" fill="#3E4030">1</text>
+    <text x="274.60" y="466.00" fill="#3D3E2E">1</text>
+    <text x="278.20" y="466.00" fill="#3D3F2F">0</text>
+    <text x="281.80" y="466.00" fill="#303226">0</text>
+    <text x="285.40" y="466.00" fill="#26291E">0</text>
+    <text x="289.00" y="466.00" fill="#21241A">0</text>
+    <text x="292.60" y="466.00" fill="#1E2117">1</text>
+    <text x="296.20" y="466.00" fill="#20241B">0</text>
+    <text x="299.80" y="466.00" fill="#232721">1</text>
+    <text x="303.40" y="466.00" fill="#1E221C">1</text>
+    <text x="307.00" y="466.00" fill="#0A0D09">1</text>
+    <text x="310.60" y="466.00" fill="#101410">1</text>
+    <text x="321.40" y="466.00" fill="#030306">0</text>
+    <text x="325.00" y="466.00" fill="#010406">0</text>
+    <text x="328.60" y="466.00" fill="#020507">0</text>
+    <text x="332.20" y="466.00" fill="#030506">0</text>
+    <text x="339.40" y="466.00" fill="#030507">1</text>
+    <text x="343.00" y="466.00" fill="#030508">0</text>
+    <text x="346.60" y="466.00" fill="#07090B">0</text>
+    <text x="350.20" y="466.00" fill="#0F1013">0</text>
+    <text x="353.80" y="466.00" fill="#0E0E10">0</text>
+    <text x="357.40" y="466.00" fill="#0B0B08">1</text>
+    <text x="173.80" y="473.00" fill="#1B1916">0</text>
+    <text x="177.40" y="473.00" fill="#918C7F">0</text>
+    <text x="181.00" y="473.00" fill="#B5B1A4">0</text>
+    <text x="184.60" y="473.00" fill="#B5B1A4">0</text>
+    <text x="188.20" y="473.00" fill="#B0AEA1">1</text>
+    <text x="191.80" y="473.00" fill="#B1AFA4">0</text>
+    <text x="195.40" y="473.00" fill="#B5B3A7">1</text>
+    <text x="199.00" y="473.00" fill="#ABA99D">0</text>
+    <text x="202.60" y="473.00" fill="#9E9B8E">1</text>
+    <text x="206.20" y="473.00" fill="#8E8979">0</text>
+    <text x="209.80" y="473.00" fill="#7D7766">0</text>
+    <text x="213.40" y="473.00" fill="#77705F">0</text>
+    <text x="217.00" y="473.00" fill="#817767">1</text>
+    <text x="220.60" y="473.00" fill="#7C7163">0</text>
+    <text x="224.20" y="473.00" fill="#756A5D">1</text>
+    <text x="227.80" y="473.00" fill="#736B5E">1</text>
+    <text x="231.40" y="473.00" fill="#5D5949">0</text>
+    <text x="235.00" y="473.00" fill="#6C6857">1</text>
+    <text x="238.60" y="473.00" fill="#5C5B4B">0</text>
+    <text x="242.20" y="473.00" fill="#636255">0</text>
+    <text x="245.80" y="473.00" fill="#20211C">1</text>
+    <text x="249.40" y="473.00" fill="#0B0C07">0</text>
+    <text x="253.00" y="473.00" fill="#191B15">1</text>
+    <text x="256.60" y="473.00" fill="#21221A">1</text>
+    <text x="260.20" y="473.00" fill="#1D2016">0</text>
+    <text x="263.80" y="473.00" fill="#2B2D22">1</text>
+    <text x="267.40" y="473.00" fill="#3E4030">0</text>
+    <text x="271.00" y="473.00" fill="#2E3121">1</text>
+    <text x="274.60" y="473.00" fill="#2E3023">0</text>
+    <text x="278.20" y="473.00" fill="#37392D">1</text>
+    <text x="281.80" y="473.00" fill="#333528">0</text>
+    <text x="285.40" y="473.00" fill="#272B1E">1</text>
+    <text x="289.00" y="473.00" fill="#25281A">0</text>
+    <text x="292.60" y="473.00" fill="#292D20">1</text>
+    <text x="296.20" y="473.00" fill="#2B2E22">0</text>
+    <text x="299.80" y="473.00" fill="#22271C">0</text>
+    <text x="303.40" y="473.00" fill="#262B22">0</text>
+    <text x="307.00" y="473.00" fill="#161712">0</text>
+    <text x="346.60" y="473.00" fill="#050506">0</text>
+    <text x="350.20" y="473.00" fill="#131311">1</text>
+    <text x="353.80" y="473.00" fill="#121311">1</text>
+    <text x="357.40" y="473.00" fill="#0B0B07">0</text>
+    <text x="177.40" y="480.00" fill="#1F1D19">1</text>
+    <text x="181.00" y="480.00" fill="#7C7768">0</text>
+    <text x="184.60" y="480.00" fill="#A5A08D">1</text>
+    <text x="188.20" y="480.00" fill="#ABA593">0</text>
+    <text x="191.80" y="480.00" fill="#A49E8C">1</text>
+    <text x="195.40" y="480.00" fill="#9E9784">1</text>
+    <text x="199.00" y="480.00" fill="#9C9582">1</text>
+    <text x="202.60" y="480.00" fill="#948E7B">1</text>
+    <text x="206.20" y="480.00" fill="#8A8571">0</text>
+    <text x="209.80" y="480.00" fill="#88826E">1</text>
+    <text x="213.40" y="480.00" fill="#7F7763">0</text>
+    <text x="217.00" y="480.00" fill="#746B5A">1</text>
+    <text x="220.60" y="480.00" fill="#7C7566">1</text>
+    <text x="224.20" y="480.00" fill="#777263">0</text>
+    <text x="227.80" y="480.00" fill="#676554">0</text>
+    <text x="231.40" y="480.00" fill="#5B5A4B">1</text>
+    <text x="235.00" y="480.00" fill="#3F4033">0</text>
+    <text x="238.60" y="480.00" fill="#3C3D32">1</text>
+    <text x="242.20" y="480.00" fill="#4C4D43">0</text>
+    <text x="245.80" y="480.00" fill="#1C1E17">0</text>
+    <text x="249.40" y="480.00" fill="#161911">0</text>
+    <text x="253.00" y="480.00" fill="#1E2016">1</text>
+    <text x="256.60" y="480.00" fill="#1D1F16">1</text>
+    <text x="260.20" y="480.00" fill="#1D1F15">1</text>
+    <text x="263.80" y="480.00" fill="#27281D">1</text>
+    <text x="267.40" y="480.00" fill="#303123">1</text>
+    <text x="271.00" y="480.00" fill="#292B1D">1</text>
+    <text x="274.60" y="480.00" fill="#292C20">0</text>
+    <text x="278.20" y="480.00" fill="#33382D">0</text>
+    <text x="281.80" y="480.00" fill="#313527">0</text>
+    <text x="285.40" y="480.00" fill="#2D2E22">1</text>
+    <text x="289.00" y="480.00" fill="#24261B">1</text>
+    <text x="292.60" y="480.00" fill="#26271C">1</text>
+    <text x="296.20" y="480.00" fill="#2F3126">1</text>
+    <text x="299.80" y="480.00" fill="#272B20">1</text>
+    <text x="303.40" y="480.00" fill="#20261C">0</text>
+    <text x="307.00" y="480.00" fill="#272A1F">0</text>
+    <text x="310.60" y="480.00" fill="#141410">1</text>
+    <text x="350.20" y="480.00" fill="#0E110C">1</text>
+    <text x="353.80" y="480.00" fill="#0D0F0C">1</text>
+    <text x="357.40" y="480.00" fill="#090A06">0</text>
+    <text x="181.00" y="487.00" fill="#191812">0</text>
+    <text x="184.60" y="487.00" fill="#66604E">1</text>
+    <text x="188.20" y="487.00" fill="#8D856D">1</text>
+    <text x="191.80" y="487.00" fill="#998D76">1</text>
+    <text x="195.40" y="487.00" fill="#988A74">0</text>
+    <text x="199.00" y="487.00" fill="#8D816A">1</text>
+    <text x="202.60" y="487.00" fill="#847A62">1</text>
+    <text x="206.20" y="487.00" fill="#88806A">1</text>
+    <text x="209.80" y="487.00" fill="#807B67">0</text>
+    <text x="213.40" y="487.00" fill="#7E7766">0</text>
+    <text x="217.00" y="487.00" fill="#766D5F">1</text>
+    <text x="220.60" y="487.00" fill="#726C5D">0</text>
+    <text x="224.20" y="487.00" fill="#625D4F">0</text>
+    <text x="227.80" y="487.00" fill="#3E3C31">1</text>
+    <text x="231.40" y="487.00" fill="#39382D">1</text>
+    <text x="235.00" y="487.00" fill="#23241B">1</text>
+    <text x="238.60" y="487.00" fill="#181914">0</text>
+    <text x="242.20" y="487.00" fill="#171812">1</text>
+    <text x="245.80" y="487.00" fill="#1C1D15">1</text>
+    <text x="249.40" y="487.00" fill="#1D1F16">1</text>
+    <text x="253.00" y="487.00" fill="#1C1C16">1</text>
+    <text x="256.60" y="487.00" fill="#191B12">0</text>
+    <text x="260.20" y="487.00" fill="#1C1D14">1</text>
+    <text x="263.80" y="487.00" fill="#28281E">0</text>
+    <text x="267.40" y="487.00" fill="#292A1D">0</text>
+    <text x="271.00" y="487.00" fill="#28281B">1</text>
+    <text x="274.60" y="487.00" fill="#2A2C20">0</text>
+    <text x="278.20" y="487.00" fill="#32372A">1</text>
+    <text x="281.80" y="487.00" fill="#303729">0</text>
+    <text x="285.40" y="487.00" fill="#2E3024">1</text>
+    <text x="289.00" y="487.00" fill="#27291F">1</text>
+    <text x="292.60" y="487.00" fill="#222318">0</text>
+    <text x="296.20" y="487.00" fill="#292B20">1</text>
+    <text x="299.80" y="487.00" fill="#2B2D22">1</text>
+    <text x="303.40" y="487.00" fill="#21241B">0</text>
+    <text x="307.00" y="487.00" fill="#23271D">0</text>
+    <text x="310.60" y="487.00" fill="#2C2D22">1</text>
+    <text x="314.20" y="487.00" fill="#0D0C0A">0</text>
+    <text x="350.20" y="487.00" fill="#0F0E0A">1</text>
+    <text x="353.80" y="487.00" fill="#0B0907">1</text>
+    <text x="357.40" y="487.00" fill="#0A0B07">0</text>
+    <text x="184.60" y="494.00" fill="#0F0E0B">1</text>
+    <text x="188.20" y="494.00" fill="#544E3D">1</text>
+    <text x="191.80" y="494.00" fill="#786D57">1</text>
+    <text x="195.40" y="494.00" fill="#81735E">1</text>
+    <text x="199.00" y="494.00" fill="#827560">1</text>
+    <text x="202.60" y="494.00" fill="#7C715A">1</text>
+    <text x="206.20" y="494.00" fill="#776C55">0</text>
+    <text x="209.80" y="494.00" fill="#807560">1</text>
+    <text x="213.40" y="494.00" fill="#82786A">1</text>
+    <text x="217.00" y="494.00" fill="#7E7568">0</text>
+    <text x="220.60" y="494.00" fill="#625B4F">0</text>
+    <text x="224.20" y="494.00" fill="#181612">1</text>
+    <text x="235.00" y="494.00" fill="#11100D">0</text>
+    <text x="238.60" y="494.00" fill="#1C1C16">1</text>
+    <text x="242.20" y="494.00" fill="#1D1F17">0</text>
+    <text x="245.80" y="494.00" fill="#1C1E16">0</text>
+    <text x="249.40" y="494.00" fill="#1C1C16">1</text>
+    <text x="253.00" y="494.00" fill="#1A1B13">0</text>
+    <text x="256.60" y="494.00" fill="#1B1B11">0</text>
+    <text x="260.20" y="494.00" fill="#1F1F15">0</text>
+    <text x="263.80" y="494.00" fill="#27271C">1</text>
+    <text x="267.40" y="494.00" fill="#29291E">0</text>
+    <text x="271.00" y="494.00" fill="#2A291F">1</text>
+    <text x="274.60" y="494.00" fill="#28291E">0</text>
+    <text x="278.20" y="494.00" fill="#313327">1</text>
+    <text x="281.80" y="494.00" fill="#35372C">0</text>
+    <text x="285.40" y="494.00" fill="#303226">0</text>
+    <text x="289.00" y="494.00" fill="#2A2B1F">1</text>
+    <text x="292.60" y="494.00" fill="#222516">1</text>
+    <text x="296.20" y="494.00" fill="#222517">1</text>
+    <text x="299.80" y="494.00" fill="#2D2E23">1</text>
+    <text x="303.40" y="494.00" fill="#24261C">0</text>
+    <text x="307.00" y="494.00" fill="#212319">1</text>
+    <text x="310.60" y="494.00" fill="#24271C">1</text>
+    <text x="314.20" y="494.00" fill="#292A1F">0</text>
+    <text x="346.60" y="494.00" fill="#080705">1</text>
+    <text x="350.20" y="494.00" fill="#11100B">1</text>
+    <text x="353.80" y="494.00" fill="#070604">0</text>
+    <text x="357.40" y="494.00" fill="#0A0B06">0</text>
+    <text x="191.80" y="501.00" fill="#3C382C">1</text>
+    <text x="195.40" y="501.00" fill="#67604D">1</text>
+    <text x="199.00" y="501.00" fill="#726B55">0</text>
+    <text x="202.60" y="501.00" fill="#787159">0</text>
+    <text x="206.20" y="501.00" fill="#756B54">0</text>
+    <text x="209.80" y="501.00" fill="#726651">0</text>
+    <text x="213.40" y="501.00" fill="#7A7262">1</text>
+    <text x="217.00" y="501.00" fill="#7D7767">1</text>
+    <text x="220.60" y="501.00" fill="#353129">0</text>
+    <text x="231.40" y="501.00" fill="#0C0B08">0</text>
+    <text x="235.00" y="501.00" fill="#181811">1</text>
+    <text x="238.60" y="501.00" fill="#1C1E17">1</text>
+    <text x="242.20" y="501.00" fill="#1B1E16">1</text>
+    <text x="245.80" y="501.00" fill="#191B16">1</text>
+    <text x="249.40" y="501.00" fill="#181A15">1</text>
+    <text x="253.00" y="501.00" fill="#1A1C13">1</text>
+    <text x="256.60" y="501.00" fill="#1E2015">0</text>
+    <text x="260.20" y="501.00" fill="#202016">1</text>
+    <text x="263.80" y="501.00" fill="#222218">0</text>
+    <text x="267.40" y="501.00" fill="#25251B">0</text>
+    <text x="271.00" y="501.00" fill="#26271C">0</text>
+    <text x="274.60" y="501.00" fill="#242619">0</text>
+    <text x="278.20" y="501.00" fill="#2F3124">0</text>
+    <text x="281.80" y="501.00" fill="#37382D">1</text>
+    <text x="285.40" y="501.00" fill="#2F3125">0</text>
+    <text x="289.00" y="501.00" fill="#2A2C20">1</text>
+    <text x="292.60" y="501.00" fill="#232518">1</text>
+    <text x="296.20" y="501.00" fill="#222316">1</text>
+    <text x="299.80" y="501.00" fill="#2A2C21">1</text>
+    <text x="303.40" y="501.00" fill="#202216">1</text>
+    <text x="307.00" y="501.00" fill="#1C1F14">1</text>
+    <text x="310.60" y="501.00" fill="#25271C">1</text>
+    <text x="314.20" y="501.00" fill="#2C2D20">0</text>
+    <text x="317.80" y="501.00" fill="#070705">0</text>
+    <text x="346.60" y="501.00" fill="#0B0805">1</text>
+    <text x="350.20" y="501.00" fill="#0D0B09">0</text>
+    <text x="357.40" y="501.00" fill="#0B0906">0</text>
+    <text x="191.80" y="508.00" fill="#060504">1</text>
+    <text x="195.40" y="508.00" fill="#353329">0</text>
+    <text x="199.00" y="508.00" fill="#595444">0</text>
+    <text x="202.60" y="508.00" fill="#6E674F">0</text>
+    <text x="206.20" y="508.00" fill="#787059">0</text>
+    <text x="209.80" y="508.00" fill="#776C57">0</text>
+    <text x="213.40" y="508.00" fill="#6A6251">0</text>
+    <text x="217.00" y="508.00" fill="#36332B">0</text>
+    <text x="231.40" y="508.00" fill="#0E0D0A">0</text>
+    <text x="235.00" y="508.00" fill="#22241C">1</text>
+    <text x="238.60" y="508.00" fill="#1C2119">1</text>
+    <text x="242.20" y="508.00" fill="#1A1E16">0</text>
+    <text x="245.80" y="508.00" fill="#1C1F19">0</text>
+    <text x="249.40" y="508.00" fill="#1C1D17">0</text>
+    <text x="253.00" y="508.00" fill="#1D1F16">0</text>
+    <text x="256.60" y="508.00" fill="#1F2115">1</text>
+    <text x="260.20" y="508.00" fill="#1F2116">1</text>
+    <text x="263.80" y="508.00" fill="#222318">0</text>
+    <text x="267.40" y="508.00" fill="#212317">1</text>
+    <text x="271.00" y="508.00" fill="#222418">0</text>
+    <text x="274.60" y="508.00" fill="#222217">1</text>
+    <text x="278.20" y="508.00" fill="#2D2E22">0</text>
+    <text x="281.80" y="508.00" fill="#383A2D">0</text>
+    <text x="285.40" y="508.00" fill="#2E3325">0</text>
+    <text x="289.00" y="508.00" fill="#2B2E21">1</text>
+    <text x="292.60" y="508.00" fill="#25281A">1</text>
+    <text x="296.20" y="508.00" fill="#222517">0</text>
+    <text x="299.80" y="508.00" fill="#27291D">0</text>
+    <text x="303.40" y="508.00" fill="#25271B">0</text>
+    <text x="307.00" y="508.00" fill="#171B0F">1</text>
+    <text x="310.60" y="508.00" fill="#222317">1</text>
+    <text x="314.20" y="508.00" fill="#161610">1</text>
+    <text x="346.60" y="508.00" fill="#0C0B07">1</text>
+    <text x="350.20" y="508.00" fill="#090805">1</text>
+    <text x="357.40" y="508.00" fill="#090705">0</text>
+    <text x="191.80" y="515.00" fill="#070605">1</text>
+    <text x="195.40" y="515.00" fill="#0C0B09">0</text>
+    <text x="199.00" y="515.00" fill="#0F0E0B">1</text>
+    <text x="202.60" y="515.00" fill="#38352A">1</text>
+    <text x="206.20" y="515.00" fill="#5B5745">1</text>
+    <text x="209.80" y="515.00" fill="#4A4638">1</text>
+    <text x="213.40" y="515.00" fill="#161510">1</text>
+    <text x="235.00" y="515.00" fill="#21231A">1</text>
+    <text x="238.60" y="515.00" fill="#22251C">1</text>
+    <text x="242.20" y="515.00" fill="#1C1D17">0</text>
+    <text x="245.80" y="515.00" fill="#20221C">0</text>
+    <text x="249.40" y="515.00" fill="#1E2019">0</text>
+    <text x="253.00" y="515.00" fill="#202217">1</text>
+    <text x="256.60" y="515.00" fill="#202215">0</text>
+    <text x="260.20" y="515.00" fill="#202116">1</text>
+    <text x="263.80" y="515.00" fill="#22221A">0</text>
+    <text x="267.40" y="515.00" fill="#222318">0</text>
+    <text x="271.00" y="515.00" fill="#222217">1</text>
+    <text x="274.60" y="515.00" fill="#212216">1</text>
+    <text x="278.20" y="515.00" fill="#27291D">0</text>
+    <text x="281.80" y="515.00" fill="#383A2D">1</text>
+    <text x="285.40" y="515.00" fill="#303326">0</text>
+    <text x="289.00" y="515.00" fill="#2C2E22">0</text>
+    <text x="292.60" y="515.00" fill="#25291C">1</text>
+    <text x="296.20" y="515.00" fill="#232619">1</text>
+    <text x="299.80" y="515.00" fill="#24261A">1</text>
+    <text x="303.40" y="515.00" fill="#2E3125">0</text>
+    <text x="307.00" y="515.00" fill="#25271C">1</text>
+    <text x="310.60" y="515.00" fill="#12130C">0</text>
+    <text x="346.60" y="515.00" fill="#100D09">1</text>
+    <text x="350.20" y="515.00" fill="#060504">1</text>
+    <text x="357.40" y="515.00" fill="#080805">0</text>
+    <text x="191.80" y="522.00" fill="#070605">1</text>
+    <text x="195.40" y="522.00" fill="#0B0B09">0</text>
+    <text x="206.20" y="522.00" fill="#11110B">0</text>
+    <text x="209.80" y="522.00" fill="#0D0C09">0</text>
+    <text x="235.00" y="522.00" fill="#12120D">1</text>
+    <text x="238.60" y="522.00" fill="#2F3125">0</text>
+    <text x="242.20" y="522.00" fill="#26271C">1</text>
+    <text x="245.80" y="522.00" fill="#22231C">0</text>
+    <text x="249.40" y="522.00" fill="#202119">1</text>
+    <text x="253.00" y="522.00" fill="#212216">1</text>
+    <text x="256.60" y="522.00" fill="#202116">0</text>
+    <text x="260.20" y="522.00" fill="#212116">0</text>
+    <text x="263.80" y="522.00" fill="#22221A">0</text>
+    <text x="267.40" y="522.00" fill="#222219">1</text>
+    <text x="271.00" y="522.00" fill="#222218">1</text>
+    <text x="274.60" y="522.00" fill="#1F2015">0</text>
+    <text x="278.20" y="522.00" fill="#1F2216">0</text>
+    <text x="281.80" y="522.00" fill="#35382B">0</text>
+    <text x="285.40" y="522.00" fill="#303225">1</text>
+    <text x="289.00" y="522.00" fill="#2C2D21">1</text>
+    <text x="292.60" y="522.00" fill="#26271C">1</text>
+    <text x="296.20" y="522.00" fill="#25271B">1</text>
+    <text x="299.80" y="522.00" fill="#252719">1</text>
+    <text x="303.40" y="522.00" fill="#2A2C1E">1</text>
+    <text x="307.00" y="522.00" fill="#25251D">0</text>
+    <text x="346.60" y="522.00" fill="#100D09">0</text>
+    <text x="357.40" y="522.00" fill="#0B0907">1</text>
+    <text x="191.80" y="529.00" fill="#0A0905">1</text>
+    <text x="195.40" y="529.00" fill="#090906">1</text>
+    <text x="209.80" y="529.00" fill="#0A0906">1</text>
+    <text x="213.40" y="529.00" fill="#090805">0</text>
+    <text x="217.00" y="529.00" fill="#070605">0</text>
+    <text x="220.60" y="529.00" fill="#080805">0</text>
+    <text x="224.20" y="529.00" fill="#070706">1</text>
+    <text x="227.80" y="529.00" fill="#060705">1</text>
+    <text x="235.00" y="529.00" fill="#060705">1</text>
+    <text x="238.60" y="529.00" fill="#2F3027">0</text>
+    <text x="242.20" y="529.00" fill="#2D2D22">0</text>
+    <text x="245.80" y="529.00" fill="#27281E">0</text>
+    <text x="249.40" y="529.00" fill="#222319">1</text>
+    <text x="253.00" y="529.00" fill="#212116">0</text>
+    <text x="256.60" y="529.00" fill="#222217">0</text>
+    <text x="260.20" y="529.00" fill="#222217">1</text>
+    <text x="263.80" y="529.00" fill="#222218">1</text>
+    <text x="267.40" y="529.00" fill="#212117">0</text>
+    <text x="271.00" y="529.00" fill="#1F2116">1</text>
+    <text x="274.60" y="529.00" fill="#1C1E14">0</text>
+    <text x="278.20" y="529.00" fill="#1C2016">0</text>
+    <text x="281.80" y="529.00" fill="#292D22">0</text>
+    <text x="285.40" y="529.00" fill="#2F2F22">1</text>
+    <text x="289.00" y="529.00" fill="#2D2D20">1</text>
+    <text x="292.60" y="529.00" fill="#27281B">1</text>
+    <text x="296.20" y="529.00" fill="#26281B">0</text>
+    <text x="299.80" y="529.00" fill="#2D2E22">0</text>
+    <text x="303.40" y="529.00" fill="#2B2D20">1</text>
+    <text x="307.00" y="529.00" fill="#27271D">0</text>
+    <text x="346.60" y="529.00" fill="#0D0B06">1</text>
+    <text x="357.40" y="529.00" fill="#0A0808">1</text>
+    <text x="191.80" y="536.00" fill="#0A0A06">1</text>
+    <text x="195.40" y="536.00" fill="#080905">1</text>
+    <text x="217.00" y="536.00" fill="#060504">0</text>
+    <text x="220.60" y="536.00" fill="#090907">1</text>
+    <text x="224.20" y="536.00" fill="#0A0A08">1</text>
+    <text x="227.80" y="536.00" fill="#0B0C0A">1</text>
+    <text x="231.40" y="536.00" fill="#0C0E0A">1</text>
+    <text x="235.00" y="536.00" fill="#0B0B07">0</text>
+    <text x="238.60" y="536.00" fill="#1F1F1A">1</text>
+    <text x="242.20" y="536.00" fill="#313227">1</text>
+    <text x="245.80" y="536.00" fill="#2D2E22">1</text>
+    <text x="249.40" y="536.00" fill="#282A1E">1</text>
+    <text x="253.00" y="536.00" fill="#232319">1</text>
+    <text x="256.60" y="536.00" fill="#222218">1</text>
+    <text x="260.20" y="536.00" fill="#222217">0</text>
+    <text x="263.80" y="536.00" fill="#212116">0</text>
+    <text x="267.40" y="536.00" fill="#222116">1</text>
+    <text x="271.00" y="536.00" fill="#1D1E14">0</text>
+    <text x="274.60" y="536.00" fill="#1B1D14">1</text>
+    <text x="278.20" y="536.00" fill="#1D2017">1</text>
+    <text x="281.80" y="536.00" fill="#25251C">1</text>
+    <text x="285.40" y="536.00" fill="#2D2E22">1</text>
+    <text x="289.00" y="536.00" fill="#2D2D22">0</text>
+    <text x="292.60" y="536.00" fill="#2B2D20">0</text>
+    <text x="296.20" y="536.00" fill="#202214">0</text>
+    <text x="299.80" y="536.00" fill="#28281E">1</text>
+    <text x="303.40" y="536.00" fill="#2F3024">1</text>
+    <text x="307.00" y="536.00" fill="#2E2F23">1</text>
+    <text x="310.60" y="536.00" fill="#14140F">0</text>
+    <text x="314.20" y="536.00" fill="#060605">0</text>
+    <text x="325.00" y="536.00" fill="#060605">1</text>
+    <text x="339.40" y="536.00" fill="#060504">1</text>
+    <text x="343.00" y="536.00" fill="#0B0A05">0</text>
+    <text x="357.40" y="536.00" fill="#090807">0</text>
+    <text x="163.00" y="543.00" fill="#0A0907">0</text>
+    <text x="166.60" y="543.00" fill="#0C0B09">0</text>
+    <text x="191.80" y="543.00" fill="#0B0A07">1</text>
+    <text x="195.40" y="543.00" fill="#080705">1</text>
+    <text x="242.20" y="543.00" fill="#313328">1</text>
+    <text x="245.80" y="543.00" fill="#2E3024">0</text>
+    <text x="249.40" y="543.00" fill="#292B20">0</text>
+    <text x="253.00" y="543.00" fill="#27271D">0</text>
+    <text x="256.60" y="543.00" fill="#24241A">0</text>
+    <text x="260.20" y="543.00" fill="#222419">1</text>
+    <text x="263.80" y="543.00" fill="#23241A">1</text>
+    <text x="267.40" y="543.00" fill="#222419">1</text>
+    <text x="271.00" y="543.00" fill="#1D1E14">1</text>
+    <text x="274.60" y="543.00" fill="#1C1C13">1</text>
+    <text x="278.20" y="543.00" fill="#212217">0</text>
+    <text x="281.80" y="543.00" fill="#26271C">0</text>
+    <text x="285.40" y="543.00" fill="#292C20">1</text>
+    <text x="289.00" y="543.00" fill="#2B2D22">0</text>
+    <text x="292.60" y="543.00" fill="#2E3024">1</text>
+    <text x="296.20" y="543.00" fill="#222418">1</text>
+    <text x="299.80" y="543.00" fill="#222218">0</text>
+    <text x="303.40" y="543.00" fill="#333327">0</text>
+    <text x="307.00" y="543.00" fill="#2D2E23">1</text>
+    <text x="310.60" y="543.00" fill="#0D0E0A">1</text>
+    <text x="314.20" y="543.00" fill="#050604">0</text>
+    <text x="317.80" y="543.00" fill="#070605">0</text>
+    <text x="321.40" y="543.00" fill="#060705">1</text>
+    <text x="325.00" y="543.00" fill="#070806">0</text>
+    <text x="328.60" y="543.00" fill="#050604">0</text>
+    <text x="332.20" y="543.00" fill="#060604">1</text>
+    <text x="357.40" y="543.00" fill="#090806">1</text>
+    <text x="163.00" y="550.00" fill="#0E0E0B">0</text>
+    <text x="166.60" y="550.00" fill="#12110D">0</text>
+    <text x="191.80" y="550.00" fill="#0E0C08">1</text>
+    <text x="195.40" y="550.00" fill="#070705">1</text>
+    <text x="242.20" y="550.00" fill="#26261F">1</text>
+    <text x="245.80" y="550.00" fill="#323327">0</text>
+    <text x="249.40" y="550.00" fill="#2B2D21">0</text>
+    <text x="253.00" y="550.00" fill="#292B20">0</text>
+    <text x="256.60" y="550.00" fill="#25271C">1</text>
+    <text x="260.20" y="550.00" fill="#23261A">0</text>
+    <text x="263.80" y="550.00" fill="#25261B">1</text>
+    <text x="267.40" y="550.00" fill="#26261C">0</text>
+    <text x="271.00" y="550.00" fill="#1F1F14">0</text>
+    <text x="274.60" y="550.00" fill="#1D1D13">0</text>
+    <text x="278.20" y="550.00" fill="#222419">0</text>
+    <text x="281.80" y="550.00" fill="#27291D">1</text>
+    <text x="285.40" y="550.00" fill="#26291D">1</text>
+    <text x="289.00" y="550.00" fill="#272C1F">0</text>
+    <text x="292.60" y="550.00" fill="#2E3024">0</text>
+    <text x="296.20" y="550.00" fill="#2A2C20">1</text>
+    <text x="299.80" y="550.00" fill="#222317">1</text>
+    <text x="303.40" y="550.00" fill="#2E3023">0</text>
+    <text x="307.00" y="550.00" fill="#2F3127">0</text>
+    <text x="357.40" y="550.00" fill="#0B0B06">0</text>
+    <text x="361.00" y="550.00" fill="#060604">0</text>
+    <text x="163.00" y="557.00" fill="#0E0D09">1</text>
+    <text x="166.60" y="557.00" fill="#0C0B07">1</text>
+    <text x="191.80" y="557.00" fill="#0C0C08">1</text>
+    <text x="242.20" y="557.00" fill="#161611">1</text>
+    <text x="245.80" y="557.00" fill="#38382C">1</text>
+    <text x="249.40" y="557.00" fill="#303327">1</text>
+    <text x="253.00" y="557.00" fill="#2D2E22">0</text>
+    <text x="256.60" y="557.00" fill="#27271C">1</text>
+    <text x="260.20" y="557.00" fill="#25261C">1</text>
+    <text x="263.80" y="557.00" fill="#25261B">1</text>
+    <text x="267.40" y="557.00" fill="#232319">0</text>
+    <text x="271.00" y="557.00" fill="#201F15">1</text>
+    <text x="274.60" y="557.00" fill="#1C1C12">1</text>
+    <text x="278.20" y="557.00" fill="#212317">0</text>
+    <text x="281.80" y="557.00" fill="#28291E">1</text>
+    <text x="285.40" y="557.00" fill="#27271C">0</text>
+    <text x="289.00" y="557.00" fill="#282A1C">0</text>
+    <text x="292.60" y="557.00" fill="#2C2D22">0</text>
+    <text x="296.20" y="557.00" fill="#313327">0</text>
+    <text x="299.80" y="557.00" fill="#26271A">0</text>
+    <text x="303.40" y="557.00" fill="#24261A">1</text>
+    <text x="307.00" y="557.00" fill="#2D2D25">1</text>
+    <text x="357.40" y="557.00" fill="#0B0B05">1</text>
+    <text x="361.00" y="557.00" fill="#070604">1</text>
+    <text x="163.00" y="564.00" fill="#0E0D09">0</text>
+    <text x="166.60" y="564.00" fill="#0B0906">0</text>
+    <text x="191.80" y="564.00" fill="#0C0C09">0</text>
+    <text x="242.20" y="564.00" fill="#060605">1</text>
+    <text x="245.80" y="564.00" fill="#36372D">0</text>
+    <text x="249.40" y="564.00" fill="#38392D">0</text>
+    <text x="253.00" y="564.00" fill="#2C2D22">1</text>
+    <text x="256.60" y="564.00" fill="#27271C">1</text>
+    <text x="260.20" y="564.00" fill="#27271C">1</text>
+    <text x="263.80" y="564.00" fill="#24241A">1</text>
+    <text x="267.40" y="564.00" fill="#222217">0</text>
+    <text x="271.00" y="564.00" fill="#1E1E14">1</text>
+    <text x="274.60" y="564.00" fill="#1B1C11">1</text>
+    <text x="278.20" y="564.00" fill="#222318">0</text>
+    <text x="281.80" y="564.00" fill="#28271D">0</text>
+    <text x="285.40" y="564.00" fill="#27271C">1</text>
+    <text x="289.00" y="564.00" fill="#27281C">0</text>
+    <text x="292.60" y="564.00" fill="#2B2D20">0</text>
+    <text x="296.20" y="564.00" fill="#303224">0</text>
+    <text x="299.80" y="564.00" fill="#292B1F">1</text>
+    <text x="303.40" y="564.00" fill="#222317">0</text>
+    <text x="307.00" y="564.00" fill="#27271D">1</text>
+    <text x="357.40" y="564.00" fill="#080704">0</text>
+    <text x="361.00" y="564.00" fill="#070604">0</text>
+    <text x="163.00" y="571.00" fill="#0F0E0B">0</text>
+    <text x="166.60" y="571.00" fill="#0B0A08">1</text>
+    <text x="188.20" y="571.00" fill="#070605">1</text>
+    <text x="191.80" y="571.00" fill="#0F0F0B">0</text>
+    <text x="245.80" y="571.00" fill="#20201C">0</text>
+    <text x="249.40" y="571.00" fill="#3C3D32">0</text>
+    <text x="253.00" y="571.00" fill="#2D2F24">0</text>
+    <text x="256.60" y="571.00" fill="#27281E">0</text>
+    <text x="260.20" y="571.00" fill="#27271C">0</text>
+    <text x="263.80" y="571.00" fill="#24241A">0</text>
+    <text x="267.40" y="571.00" fill="#212216">0</text>
+    <text x="271.00" y="571.00" fill="#1B1D13">1</text>
+    <text x="274.60" y="571.00" fill="#161910">1</text>
+    <text x="278.20" y="571.00" fill="#222318">0</text>
+    <text x="281.80" y="571.00" fill="#28291E">0</text>
+    <text x="285.40" y="571.00" fill="#26271C">1</text>
+    <text x="289.00" y="571.00" fill="#27291C">0</text>
+    <text x="292.60" y="571.00" fill="#2A2B1C">0</text>
+    <text x="296.20" y="571.00" fill="#2D2E22">1</text>
+    <text x="299.80" y="571.00" fill="#2E2F23">0</text>
+    <text x="303.40" y="571.00" fill="#27281C">1</text>
+    <text x="307.00" y="571.00" fill="#1F1F15">1</text>
+    <text x="357.40" y="571.00" fill="#070605">0</text>
+    <text x="361.00" y="571.00" fill="#080605">1</text>
+    <text x="163.00" y="578.00" fill="#0E0D0B">1</text>
+    <text x="166.60" y="578.00" fill="#0C0B0A">0</text>
+    <text x="188.20" y="578.00" fill="#080605">1</text>
+    <text x="191.80" y="578.00" fill="#100F0C">1</text>
+    <text x="245.80" y="578.00" fill="#080807">0</text>
+    <text x="249.40" y="578.00" fill="#37382E">0</text>
+    <text x="253.00" y="578.00" fill="#313327">0</text>
+    <text x="256.60" y="578.00" fill="#282A1F">1</text>
+    <text x="260.20" y="578.00" fill="#27291E">1</text>
+    <text x="263.80" y="578.00" fill="#24261B">1</text>
+    <text x="267.40" y="578.00" fill="#1C2215">1</text>
+    <text x="271.00" y="578.00" fill="#181C11">1</text>
+    <text x="274.60" y="578.00" fill="#171A11">0</text>
+    <text x="278.20" y="578.00" fill="#23261B">1</text>
+    <text x="281.80" y="578.00" fill="#27291E">0</text>
+    <text x="285.40" y="578.00" fill="#27281D">1</text>
+    <text x="289.00" y="578.00" fill="#282A1C">1</text>
+    <text x="292.60" y="578.00" fill="#292B1C">0</text>
+    <text x="296.20" y="578.00" fill="#2B2D20">1</text>
+    <text x="299.80" y="578.00" fill="#2F3223">0</text>
+    <text x="303.40" y="578.00" fill="#2A2D1E">0</text>
+    <text x="307.00" y="578.00" fill="#1F1E16">0</text>
+    <text x="357.40" y="578.00" fill="#070605">1</text>
+    <text x="361.00" y="578.00" fill="#090605">0</text>
+  </g>
+
+  <rect x="231.0" y="587.0" width="8" height="12" fill="#0891B2" filter="url(#softGlow)" rx="1">
+    <animate attributeName="opacity" values="1;0.05;1" dur="1s" repeatCount="indefinite" begin="3.2s"/>
+  </rect>
+
+  <g clip-path="url(#leftPanelClip)">
+    <rect x="20" y="20" width="430" height="2" fill="#0891B2" opacity="0.35">
+      <animate attributeName="y" values="70;580;70" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.35;0" dur="4s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  
+
+  <g id="rightPanel">
+    <rect x="470" y="24" width="690" height="570" rx="18" ry="18"
+          fill="rgba(15,23,42,0.18)" opacity="0.55" filter="url(#softGlow)"/>
+    <rect x="470" y="20" width="690" height="570" rx="18" ry="18"
+          fill="url(#panelGrad)" stroke="rgba(15,23,42,0.12)" stroke-width="1"/>
+    <rect x="470" y="20" width="690" height="570" rx="18" ry="18"
+          fill="url(#glassSheen)" opacity="0.4"/>
+  </g>
+
+  <g id="terminalWindow">
+    <!-- terminal body -->
+    <rect x="486" y="36" width="658" height="538" rx="12" ry="12"
+          fill="#FFFFFF" stroke="rgba(15,23,42,0.12)" stroke-width="1"/>
+    <!-- title bar -->
+    <path d="M 498 36 L 1132 36 A 12 12 0 0 1 1144 48 L 1144 72 L 486 72 L 486 48 A 12 12 0 0 1 498 36 Z"
+          fill="url(#termHeaderGrad)" opacity="0.85"/>
+    <line x1="486" y1="72" x2="1144" y2="72"
+          stroke="rgba(15,23,42,0.12)" stroke-width="1"/>
+    <!-- window dots -->
+    <circle cx="504" cy="54" r="5.5" fill="#EF4444"/>
+    <circle cx="522" cy="54" r="5.5" fill="#F59E0B"/>
+    <circle cx="540" cy="54" r="5.5" fill="#10B981"/>
+    <!-- title -->
+    <text x="815.0" y="58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+          font-size="11" fill="#334155" text-anchor="middle" letter-spacing="1.5">
+      zsh — nevandadhiztaevrilian@gmail.com
+    </text>
+  </g>
+
+  <g id="greeting" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.3s" fill="freeze"/>
+    <text x="510" y="96" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+          font-size="14" fill="#334155">who am i</text>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/>
+    <text x="510" y="118" font-family="Inter, -apple-system, system-ui, sans-serif"
+          font-size="15" font-weight="500" fill="#334155" letter-spacing="0.5">Hi</text>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.9s" fill="freeze"/>
+    <text x="511" y="153" font-family="Inter, -apple-system, system-ui, sans-serif"
+          font-size="32" font-weight="800" fill="rgba(15,23,42,0.18)" opacity="0.5">Nevanda D.Evrilian</text>
+    <text x="510" y="152" font-family="Inter, -apple-system, system-ui, sans-serif"
+          font-size="32" font-weight="800" fill="url(#accentGrad)" filter="url(#softGlow)">
+      Nevanda D.
+    </text>
+  </g>
+
+  <text x="510" y="188" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+        font-size="24" font-weight="500" fill="#334155">~</text>
+
+  <text x="540" y="188"
+        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+        font-size="24" font-weight="500" fill="#0F172A"
+        clip-path="url(#typeClip0)" opacity="0">
+    Frontend Engineer
+    <animate attributeName="opacity"
+      values="1;1;0;0"
+      keyTimes="0.00000;0.19667;0.20000;1.00000"
+      dur="15.0s" repeatCount="indefinite"/>
+  </text>
+
+  <text x="540" y="188"
+        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+        font-size="24" font-weight="500" fill="#0F172A"
+        clip-path="url(#typeClip1)" opacity="0">
+    Full Stack Developer
+    <animate attributeName="opacity"
+      values="0;0;1;1;0;0"
+      keyTimes="0.00000;0.20000;0.20007;0.39667;0.40000;1.00000"
+      dur="15.0s" repeatCount="indefinite"/>
+  </text>
+
+  <text x="540" y="188"
+        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+        font-size="24" font-weight="500" fill="#0F172A"
+        clip-path="url(#typeClip2)" opacity="0">
+    Open Source Contributor
+    <animate attributeName="opacity"
+      values="0;0;1;1;0;0"
+      keyTimes="0.00000;0.40000;0.40007;0.59667;0.60000;1.00000"
+      dur="15.0s" repeatCount="indefinite"/>
+  </text>
+
+  <text x="540" y="188"
+        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+        font-size="24" font-weight="500" fill="#0F172A"
+        clip-path="url(#typeClip3)" opacity="0">
+    UI Engineer
+    <animate attributeName="opacity"
+      values="0;0;1;1;0;0"
+      keyTimes="0.00000;0.60000;0.60007;0.79667;0.80000;1.00000"
+      dur="15.0s" repeatCount="indefinite"/>
+  </text>
+
+  <text x="540" y="188"
+        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+        font-size="24" font-weight="500" fill="#0F172A"
+        clip-path="url(#typeClip4)" opacity="0">
+    AI Enthusiast
+    <animate attributeName="opacity"
+      values="0;0;1;1;0;0"
+      keyTimes="0.00000;0.80000;0.80007;0.99667;1.00000;1.00000"
+      dur="15.0s" repeatCount="indefinite"/>
+  </text>
+
+  <rect x="540" y="168" width="11" height="24"
+        fill="#0891B2" filter="url(#softGlow)" rx="2">
+    <animate attributeName="x"
+      values="540.0;540.0;793.0;793.0;540.0;540.0;836.0;836.0;540.0;540.0;880.0;880.0;540.0;540.0;706.0;706.0;540.0;540.0;735.0;735.0;540.0;540.0"
+      keyTimes="0.0000;0.0000;0.0800;0.1733;0.2000;0.2000;0.2800;0.3733;0.4000;0.4000;0.4800;0.5733;0.6000;0.6000;0.6800;0.7733;0.8000;0.8000;0.8800;0.9733;1.0000;1.0000"
+      dur="15.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.08;1" dur="0.9s" repeatCount="indefinite"/>
+  </rect>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.40s" fill="freeze"/>
+    <text x="510" y="228" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+          font-size="12" fill="#64748B">Location</text>
+    <text x="640" y="228" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+          font-size="12" fill="#334155">Jakarta, Indonesia</text>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.75s" fill="freeze"/>
+    <text x="510" y="250" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+          font-size="12" fill="#64748B">Education</text>
+    <text x="640" y="250" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+          font-size="12" fill="#334155">University of Darunnajah</text>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="2.10s" fill="freeze"/>
+    <text x="510" y="272" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+          font-size="12" fill="#64748B">Current Focus</text>
+    <text x="640" y="272" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+          font-size="12" fill="#334155">Semantic Development Environments</text>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="2.45s" fill="freeze"/>
+    <text x="510" y="294" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+          font-size="12" fill="#64748B">Portfolio</text>
+    <text x="640" y="294" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+          font-size="12" fill="#334155">Nevanda-Portofolio</text>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="2.80s" fill="freeze"/>
+    <text x="510" y="316" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+          font-size="12" fill="#64748B">Email</text>
+    <text x="640" y="316" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+          font-size="12" fill="#334155">nevandadhiztaevrilian@gmail.com</text>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="3.2s" fill="freeze"/>
+    <text x="510" y="356" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+          font-size="11" fill="#64748B" letter-spacing="2">// SKILLS</text>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.50s" fill="freeze"/>
+    <g>
+      <animateTransform attributeName="transform" type="scale"
+        values="1;1.06;1" dur="2.40s" repeatCount="indefinite"
+        additive="sum"/>
+      <rect x="510" y="370" width="56" height="24" rx="12" ry="12"
+            fill="rgba(37,99,235,0.08)" stroke="rgba(37,99,235,0.30)" stroke-width="1"
+            filter="url(#softGlow)">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="2.40s" repeatCount="indefinite"/>
+      </rect>
+      <text x="538" y="386"
+            font-family="Inter, -apple-system, system-ui, sans-serif"
+            font-size="11" font-weight="500" fill="#0F172A" text-anchor="middle">
+        React
+      </text>
+    </g>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.57s" fill="freeze"/>
+    <g>
+      <animateTransform attributeName="transform" type="scale"
+        values="1;1.06;1" dur="2.53s" repeatCount="indefinite"
+        additive="sum"/>
+      <rect x="574.1" y="370" width="70" height="24" rx="12" ry="12"
+            fill="rgba(37,99,235,0.08)" stroke="rgba(37,99,235,0.30)" stroke-width="1"
+            filter="url(#softGlow)">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="2.53s" repeatCount="indefinite"/>
+      </rect>
+      <text x="609" y="386"
+            font-family="Inter, -apple-system, system-ui, sans-serif"
+            font-size="11" font-weight="500" fill="#0F172A" text-anchor="middle">
+        Next.js
+      </text>
+    </g>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.64s" fill="freeze"/>
+    <g>
+      <animateTransform attributeName="transform" type="scale"
+        values="1;1.06;1" dur="2.66s" repeatCount="indefinite"
+        additive="sum"/>
+      <rect x="651.84" y="370" width="70" height="24" rx="12" ry="12"
+            fill="rgba(37,99,235,0.08)" stroke="rgba(37,99,235,0.30)" stroke-width="1"
+            filter="url(#softGlow)">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="2.66s" repeatCount="indefinite"/>
+      </rect>
+      <text x="687" y="386"
+            font-family="Inter, -apple-system, system-ui, sans-serif"
+            font-size="11" font-weight="500" fill="#0F172A" text-anchor="middle">
+        Node.js
+      </text>
+    </g>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.71s" fill="freeze"/>
+    <g>
+      <animateTransform attributeName="transform" type="scale"
+        values="1;1.06;1" dur="2.79s" repeatCount="indefinite"
+        additive="sum"/>
+      <rect x="729.58" y="370" width="90" height="24" rx="12" ry="12"
+            fill="rgba(37,99,235,0.08)" stroke="rgba(37,99,235,0.30)" stroke-width="1"
+            filter="url(#softGlow)">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="2.79s" repeatCount="indefinite"/>
+      </rect>
+      <text x="775" y="386"
+            font-family="Inter, -apple-system, system-ui, sans-serif"
+            font-size="11" font-weight="500" fill="#0F172A" text-anchor="middle">
+        TypeScript
+      </text>
+    </g>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.78s" fill="freeze"/>
+    <g>
+      <animateTransform attributeName="transform" type="scale"
+        values="1;1.06;1" dur="2.92s" repeatCount="indefinite"
+        additive="sum"/>
+      <rect x="827.7800000000001" y="370" width="77" height="24" rx="12" ry="12"
+            fill="rgba(37,99,235,0.08)" stroke="rgba(37,99,235,0.30)" stroke-width="1"
+            filter="url(#softGlow)">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="2.92s" repeatCount="indefinite"/>
+      </rect>
+      <text x="866" y="386"
+            font-family="Inter, -apple-system, system-ui, sans-serif"
+            font-size="11" font-weight="500" fill="#0F172A" text-anchor="middle">
+        Tailwind
+      </text>
+    </g>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.85s" fill="freeze"/>
+    <g>
+      <animateTransform attributeName="transform" type="scale"
+        values="1;1.06;1" dur="3.05s" repeatCount="indefinite"
+        additive="sum"/>
+      <rect x="912.3400000000001" y="370" width="63" height="24" rx="12" ry="12"
+            fill="rgba(37,99,235,0.08)" stroke="rgba(37,99,235,0.30)" stroke-width="1"
+            filter="url(#softGlow)">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.05s" repeatCount="indefinite"/>
+      </rect>
+      <text x="944" y="386"
+            font-family="Inter, -apple-system, system-ui, sans-serif"
+            font-size="11" font-weight="500" fill="#0F172A" text-anchor="middle">
+        Python
+      </text>
+    </g>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.92s" fill="freeze"/>
+    <g>
+      <animateTransform attributeName="transform" type="scale"
+        values="1;1.06;1" dur="3.18s" repeatCount="indefinite"
+        additive="sum"/>
+      <rect x="983.2600000000001" y="370" width="63" height="24" rx="12" ry="12"
+            fill="rgba(37,99,235,0.08)" stroke="rgba(37,99,235,0.30)" stroke-width="1"
+            filter="url(#softGlow)">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.18s" repeatCount="indefinite"/>
+      </rect>
+      <text x="1015" y="386"
+            font-family="Inter, -apple-system, system-ui, sans-serif"
+            font-size="11" font-weight="500" fill="#0F172A" text-anchor="middle">
+        Docker
+      </text>
+    </g>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.99s" fill="freeze"/>
+    <g>
+      <animateTransform attributeName="transform" type="scale"
+        values="1;1.06;1" dur="3.31s" repeatCount="indefinite"
+        additive="sum"/>
+      <rect x="510" y="402" width="77" height="24" rx="12" ry="12"
+            fill="rgba(37,99,235,0.08)" stroke="rgba(37,99,235,0.30)" stroke-width="1"
+            filter="url(#softGlow)">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.31s" repeatCount="indefinite"/>
+      </rect>
+      <text x="548" y="418"
+            font-family="Inter, -apple-system, system-ui, sans-serif"
+            font-size="11" font-weight="500" fill="#0F172A" text-anchor="middle">
+        Postgres
+      </text>
+    </g>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="4.06s" fill="freeze"/>
+    <g>
+      <animateTransform attributeName="transform" type="scale"
+        values="1;1.06;1" dur="3.44s" repeatCount="indefinite"
+        additive="sum"/>
+      <rect x="594.56" y="402" width="42" height="24" rx="12" ry="12"
+            fill="rgba(37,99,235,0.08)" stroke="rgba(37,99,235,0.30)" stroke-width="1"
+            filter="url(#softGlow)">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.44s" repeatCount="indefinite"/>
+      </rect>
+      <text x="616" y="418"
+            font-family="Inter, -apple-system, system-ui, sans-serif"
+            font-size="11" font-weight="500" fill="#0F172A" text-anchor="middle">
+        AWS
+      </text>
+    </g>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="4.13s" fill="freeze"/>
+    <g>
+      <animateTransform attributeName="transform" type="scale"
+        values="1;1.06;1" dur="3.57s" repeatCount="indefinite"
+        additive="sum"/>
+      <rect x="645.02" y="402" width="42" height="24" rx="12" ry="12"
+            fill="rgba(37,99,235,0.08)" stroke="rgba(37,99,235,0.30)" stroke-width="1"
+            filter="url(#softGlow)">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.57s" repeatCount="indefinite"/>
+      </rect>
+      <text x="666" y="418"
+            font-family="Inter, -apple-system, system-ui, sans-serif"
+            font-size="11" font-weight="500" fill="#0F172A" text-anchor="middle">
+        Git
+      </text>
+    </g>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="4.20s" fill="freeze"/>
+    <g>
+      <animateTransform attributeName="transform" type="scale"
+        values="1;1.06;1" dur="3.70s" repeatCount="indefinite"
+        additive="sum"/>
+      <rect x="695.48" y="402" width="56" height="24" rx="12" ry="12"
+            fill="rgba(37,99,235,0.08)" stroke="rgba(37,99,235,0.30)" stroke-width="1"
+            filter="url(#softGlow)">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.70s" repeatCount="indefinite"/>
+      </rect>
+      <text x="724" y="418"
+            font-family="Inter, -apple-system, system-ui, sans-serif"
+            font-size="11" font-weight="500" fill="#0F172A" text-anchor="middle">
+        Figma
+      </text>
+    </g>
+  </g>
+
+  <line x1="510" y1="524" x2="1120" y2="524"
+        stroke="rgba(15,23,42,0.12)" stroke-width="1"/>
+
+  <g opacity="0" transform="translate(514, 538)">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="4.00s" fill="freeze"/>
+    <circle cx="11" cy="11" r="14" fill="rgba(37,99,235,0.08)" stroke="#2563EB" stroke-width="1" stroke-opacity="0.45">
+      <animate attributeName="stroke-opacity" values="0.45;0.9;0.45" dur="2.60s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="14;14.8;14" dur="2.60s" repeatCount="indefinite"/>
+    </circle>
+    <g color="#2563EB" filter="url(#softGlow)">
+      <use href="#ico-github" x="2" y="2" width="18" height="18"/>
+    </g>
+  </g>
+
+  <g opacity="0" transform="translate(552, 538)">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="4.15s" fill="freeze"/>
+    <circle cx="11" cy="11" r="14" fill="rgba(37,99,235,0.08)" stroke="#0891B2" stroke-width="1" stroke-opacity="0.45">
+      <animate attributeName="stroke-opacity" values="0.45;0.9;0.45" dur="2.90s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="14;14.8;14" dur="2.90s" repeatCount="indefinite"/>
+    </circle>
+    <g color="#0891B2" filter="url(#softGlow)">
+      <use href="#ico-linkedin" x="2" y="2" width="18" height="18"/>
+    </g>
+  </g>
+
+  <g opacity="0" transform="translate(590, 538)">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="4.30s" fill="freeze"/>
+    <circle cx="11" cy="11" r="14" fill="rgba(37,99,235,0.08)" stroke="#059669" stroke-width="1" stroke-opacity="0.45">
+      <animate attributeName="stroke-opacity" values="0.45;0.9;0.45" dur="3.20s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="14;14.8;14" dur="3.20s" repeatCount="indefinite"/>
+    </circle>
+    <g color="#059669" filter="url(#softGlow)">
+      <use href="#ico-twitter" x="2" y="2" width="18" height="18"/>
+    </g>
+  </g>
+
+  <g opacity="0" transform="translate(628, 538)">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="4.45s" fill="freeze"/>
+    <circle cx="11" cy="11" r="14" fill="rgba(37,99,235,0.08)" stroke="#0891B2" stroke-width="1" stroke-opacity="0.45">
+      <animate attributeName="stroke-opacity" values="0.45;0.9;0.45" dur="3.50s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="14;14.8;14" dur="3.50s" repeatCount="indefinite"/>
+    </circle>
+    <g color="#0891B2" filter="url(#softGlow)">
+      <use href="#ico-portfolio" x="2" y="2" width="18" height="18"/>
+    </g>
+  </g>
+
+  <defs>
+    <linearGradient id="canvasSheen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.06"/>
+      <stop offset="40%" stop-color="white" stop-opacity="0"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0.04"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1180" height="610" rx="20" ry="20"
+        fill="url(#canvasSheen)" pointer-events="none"/>
+
+  <rect x="0.5" y="0.5" width="1179" height="609" rx="20" ry="20"
+        fill="none" stroke="rgba(15,23,42,0.12)" stroke-width="1"/>
+  <!-- animated border shimmer -->
+  <rect x="0" y="0" width="1180" height="610" rx="20" ry="20"
+        fill="none" stroke="url(#borderShimmer)" stroke-width="1.5"
+        mask="url(#borderMask)" opacity="0.9"/>
+</svg>
