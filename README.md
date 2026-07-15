@@ -15,4 +15,4 @@
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/evrlyn.__)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nevanda-dhizta-evrilian)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Nevanda12)
-[![Portfolio](https://img.shields.io/badge/Portfolio-6D28D9?style=for-the-badge&logo=planetscale&logoColor=white)](https://nevanda12.github.io/Nevanda-Portofolio)
+[![Portfolio](https://img.shields.io/badge/My_Portfolio-6D28D9?style=for-the-badge&logo=planetscale&logoColor=white)](https://nevanda12.github.io/Nevanda-Portofolio)
